@@ -1,0 +1,9 @@
+syntax = "proto2";
+package lm;
+message helloworld
+{
+  required int32 id = 1;
+  required string str = 2;
+  required int32 opt = 3;
+}
+

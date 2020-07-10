@@ -1,0 +1,72 @@
+>> Output files will be saved to "[1;31m/home/zhouyuchen/work_space/output/accelerate/m5out[0m"!
+in m5Main : command is import m5 
+init core !
+in m5Main : command is m5.main() 
+text is --at-instruction
+code is /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt
+num of cores is 2
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled May  6 2020 21:43:06
+gem5 started May  6 2020 21:43:42
+gem5 executing on server17, pid 19253
+command line: /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt /home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py --cpu-type=AtomicSimpleCPU --num-cpus=2 --mem-type=SimpleMemory --mem-size=2GB --at-instruction -c 'example/bubble;example/bubble' -o ';'
+
+filecode is <code object <module> at 0x7f220c45b7b0, file "/home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py", line 45>
+the program is ['example/bubble']
+the number of workload is 1 
+the program is ['example/bubble']
+the number of workload is 2 
+numThreads is 1 
+multiprocesses are [<m5.objects.Process.Process object at 0x7f220c185d50>, <m5.objects.Process.Process object at 0x7f220c1371d0>]
+CPUClass is AtomicSimpleCPU , test_mem_mode is atomic , FutureClass is None
+create a thread !
+create a thread !
+Global frequency set at 1000000000000 ticks per second
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+from pollevent !
+from pollevent !
+**** REAL SIMULATION ****
+The number of thread is : 2
+Now coming to the GlobalEvent schedule function ! 
+getCurTick is 0 
+num_cycles is 18446744073709551615 
+进入Global reschedule !
+Entering reschedule 阶段! 
+Entering reschedule 阶段! 
+Now coming to the GlobalEvent schedule function ! 
+quantum_event runned 
+begin to wait 
+queue 1 enter if(async_event)!
+queue 1 enter if(async_io)!
+wait end 

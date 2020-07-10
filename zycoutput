@@ -1,0 +1,4187 @@
+>> Output files will be saved to "[1;31m/home/zhouyuchen/work_space/output/accelerate/m5out[0m"!
+in m5Main : command is import m5 
+init core !
+in m5Main : command is m5.main() 
+text is --l1d_size=32kB
+code is /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt
+num of cores is 2
+The length of mainEventQueue is 1
+Index is 0 
+The length of mainEventQueue is 2
+Index is 1 
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 27 2020 23:04:45
+gem5 started Apr 27 2020 23:20:21
+gem5 executing on server17, pid 28312
+command line: /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt /home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py --cpu-type=AtomicSimpleCPU --num-cpus=2 --mem-size=2GB --caches --l1d_size=32kB --l1d_assoc=4 --l1i_size=64kB --l1i_assoc=4 --at-instruction -c 'example/bubble;example/bubble' -o ';'
+
+filecode is <code object <module> at 0x7f51b1efc7b0, file "/home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py", line 45>
+the program is ['example/bubble']
+the number of workload is 1 
+the program is ['example/bubble']
+the number of workload is 2 
+numThreads is 1 
+multiprocesses are [<m5.objects.Process.Process object at 0x7f51b1c26d10>, <m5.objects.Process.Process object at 0x7f51b1bd9190>]
+CPUClass is AtomicSimpleCPU , test_mem_mode is atomic , FutureClass is None
+create a thread !
+create a thread !
+Global frequency set at 1000000000000 ticks per second
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 1 
+EventManager constructor 3 !
+C3 EventQueue1 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+EventManager constructor 3 !
+C3 EventQueue0 !
+Insert SimObjects ! 
+The length of mainEventQueue is 2
+Index is 0 
+The length of mainEventQueue is 2
+Index is 1 
+from pollevent !
+The length of mainEventQueue is 2
+Index is 0 
+The length of mainEventQueue is 2
+Index is 1 
+from pollevent !
+queue 0 enter insert !
+ queue 1 enter insert !
+**** REAL SIMULATION ****
+The number of thread is : 2
+Now coming to the GlobalEvent schedule function ! 
+getCurTick is 0 
+num_cycles is 18446744073709551615 
+进入Global reschedule !
+Entering reschedule 阶段! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering reschedule 阶段! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Now coming to the GlobalEvent schedule function ! 
+quantum_event runned 
+begin to wait 
+wait end 
+处理了异步插入！
+queue 0 enter if(async_event)!
+queue 0 enter if(async_io)!
+queue 0 excute serviceOne ! 
+queue1 enter dosimLoop ! 
+处理了异步插入！
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+cur queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !cur queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ now the queue is 1 
+queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+Entering Event_implement reschedule !cur queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 enter insert !
+queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 enter insert !
+queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+this == curqueue !
+queue 1 enter insert !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 1 enter insert !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 0 
+queue 1 enter insert !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+this == curqueue !
+queue 0 enter insert !
+ queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ now the queue is 1 
+queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+now the queue is 1 
+this == curqueue !
+cur queue is 1 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !cur queue is 1 
+now the queue is 0 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+this == curqueue !
+cur queue is 0 
+queue 1 enter insert !
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+now the queue is 1 
+this == curqueue !
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 enter insert !
+queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+cur queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+this == curqueue !
+cur queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+now the queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+queue 1 enter insert !
+this == curqueue !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ cur queue is 1 
+queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+cur queue is 0 
+queue 1 excute serviceOne !
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+cur queue is 0 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 1 
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+now the queue is 1 
+queue 0 enter insert !
+ cur queue is 1 
+this == curqueue !
+queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+Entering Event_implement reschedule !cur queue is 0 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+queue 1 excute serviceOne !
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+Entering Event_implement reschedule !this == curqueue !
+now the queue is 1 
+cur queue is 1 
+queue 0 enter insert !
+ this == curqueue !
+queue 1 enter insert !
+queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ Entering Event_implement reschedule !queue 0 excute serviceOne ! 
+now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+Entering Event_implement reschedule !queue 0 enter insert !
+ now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 1 excute serviceOne !
+queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !cur queue is 1 
+this == curqueue !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 enter insert !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 1 excute serviceOne !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+now the queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this == curqueue !
+Entering Event_implement reschedule !queue 1 enter insert !
+queue 1 excute serviceOne !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+Entering Event_implement reschedule !this == curqueue !
+queue 1 enter insert !
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 0 
+now the queue is 1 
+cur queue is 1 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ this == curqueue !
+queue 0 excute serviceOne ! 
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+Entering Event_implement reschedule !now the queue is 1 
+cur queue is 1 
+this == curqueue !
+queue 1 enter insert !
+queue 1 excute serviceOne !
+Entering Event_implement reschedule !Entering Event_implement reschedule !now the queue is 1 
+now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+cur queue is 1 
+Entering Event_implement reschedule !now the queue is 0 
+cur queue is 0 
+this == curqueue !
+queue 0 enter insert !
+ queue 0 excute serviceOne ! 
+this =

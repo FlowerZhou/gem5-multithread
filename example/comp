@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SRC_DIR=`pwd`
+PROTO_FILE=lm.helloworld.proto
+DST_DIR=`pwd`
+protoc -I=$SRC_DIR --cpp_out=$DST_DIR $SRC_DIR/$PROTO_FILE

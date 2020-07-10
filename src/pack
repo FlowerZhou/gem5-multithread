@@ -1,0 +1,1651 @@
+./cpu/exec_context.hh:    virtual bool mwait(PacketPtr pkt) = 0;
+./cpu/base.cc:BaseCPU::mwait(ThreadID tid, PacketPtr pkt)
+./cpu/base.cc:bool AddressMonitor::doMonitor(PacketPtr pkt) {
+./cpu/kvm/base.cc:BaseKvmCPU::KVMCpuPort::submitIO(PacketPtr pkt)
+./cpu/kvm/base.cc:BaseKvmCPU::KVMCpuPort::recvTimingResp(PacketPtr pkt)
+./cpu/kvm/base.cc:    PacketPtr pkt = new Packet(mmio_req, cmd);
+./cpu/kvm/x86_cpu.cc:        PacketPtr pkt = new Packet(io_req, cmd);
+./cpu/kvm/base.hh:        Tick submitIO(PacketPtr pkt);
+./cpu/kvm/base.hh:        std::queue<PacketPtr> pendingMMIOPkts;
+./cpu/kvm/base.hh:        bool recvTimingResp(PacketPtr pkt) override;
+./cpu/simple/exec_context.hh:    mwait(PacketPtr pkt) override
+./cpu/simple/timing.hh:        PacketPtr fragments[2];
+./cpu/simple/timing.hh:        SplitFragmentSenderState(PacketPtr _bigPkt, int _index) :
+./cpu/simple/timing.hh:        PacketPtr bigPkt;
+./cpu/simple/timing.hh:    void threadSnoop(PacketPtr pkt, ThreadID sender);
+./cpu/simple/timing.hh:    PacketPtr buildPacket(const RequestPtr &req, bool read);
+./cpu/simple/timing.hh:    void buildSplitPacket(PacketPtr &pkt1, PacketPtr &pkt2,
+./cpu/simple/timing.hh:    bool handleReadPacket(PacketPtr pkt);
+./cpu/simple/timing.hh:            PacketPtr pkt;
+./cpu/simple/timing.hh:            void schedule(PacketPtr _pkt, Tick t);
+./cpu/simple/timing.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/simple/timing.hh:        virtual void recvTimingSnoopReq(PacketPtr pkt);
+./cpu/simple/timing.hh:        virtual void recvFunctionalSnoop(PacketPtr pkt);
+./cpu/simple/timing.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/simple/timing.hh:    PacketPtr ifetch_pkt;
+./cpu/simple/timing.hh:    PacketPtr dcache_pkt;
+./cpu/simple/timing.hh:    void completeIfetch(PacketPtr );
+./cpu/simple/timing.hh:    void completeDataAccess(PacketPtr pkt);
+./cpu/simple/noncaching.cc:NonCachingSimpleCPU::sendPacket(MasterPort &port, const PacketPtr &pkt)
+./cpu/simple/timing.cc:TimingSimpleCPU::TimingCPUPort::TickEvent::schedule(PacketPtr _pkt, Tick t)
+./cpu/simple/timing.cc:TimingSimpleCPU::handleReadPacket(PacketPtr pkt)
+./cpu/simple/timing.cc:    PacketPtr pkt = buildPacket(req, read);
+./cpu/simple/timing.cc:    PacketPtr pkt1, pkt2;
+./cpu/simple/timing.cc:PacketPtr
+./cpu/simple/timing.cc:TimingSimpleCPU::buildSplitPacket(PacketPtr &pkt1, PacketPtr &pkt2,
+./cpu/simple/timing.cc:    PacketPtr pkt = new Packet(req, pkt1->cmd.responseCommand());
+./cpu/simple/timing.cc:TimingSimpleCPU::threadSnoop(PacketPtr pkt, ThreadID sender)
+./cpu/simple/timing.cc:TimingSimpleCPU::completeIfetch(PacketPtr pkt)
+./cpu/simple/timing.cc:TimingSimpleCPU::IcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/simple/timing.cc:    PacketPtr tmp = cpu->ifetch_pkt;
+./cpu/simple/timing.cc:TimingSimpleCPU::completeDataAccess(PacketPtr pkt)
+./cpu/simple/timing.cc:        PacketPtr big_pkt = send_state->bigPkt;
+./cpu/simple/timing.cc:TimingSimpleCPU::DcachePort::recvTimingSnoopReq(PacketPtr pkt)
+./cpu/simple/timing.cc:TimingSimpleCPU::DcachePort::recvFunctionalSnoop(PacketPtr pkt)
+./cpu/simple/timing.cc:TimingSimpleCPU::DcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/simple/timing.cc:    PacketPtr tmp = cpu->dcache_pkt;
+./cpu/simple/timing.cc:        PacketPtr big_pkt = send_state->bigPkt;
+./cpu/simple/noncaching.hh:    Tick sendPacket(MasterPort &port, const PacketPtr &pkt) override;
+./cpu/simple/atomic.cc:AtomicSimpleCPU::threadSnoop(PacketPtr pkt, ThreadID sender)
+./cpu/simple/atomic.cc:AtomicSimpleCPU::sendPacket(MasterPort &port, const PacketPtr &pkt)
+./cpu/simple/atomic.cc:AtomicSimpleCPU::AtomicCPUDPort::recvAtomicSnoop(PacketPtr pkt)
+./cpu/simple/atomic.cc:AtomicSimpleCPU::AtomicCPUDPort::recvFunctionalSnoop(PacketPtr pkt)
+./cpu/simple/atomic.hh:    virtual Tick sendPacket(MasterPort &port, const PacketPtr &pkt);
+./cpu/simple/atomic.hh:        bool recvTimingResp(PacketPtr pkt)
+./cpu/simple/atomic.hh:        virtual Tick recvAtomicSnoop(PacketPtr pkt);
+./cpu/simple/atomic.hh:        virtual void recvFunctionalSnoop(PacketPtr pkt);
+./cpu/simple/atomic.hh:    void threadSnoop(PacketPtr pkt, ThreadID sender);
+./cpu/checker/cpu.hh:    bool mwait(PacketPtr pkt) override { return BaseCPU::mwait(0, pkt); }
+./cpu/checker/cpu.cc:            PacketPtr pkt = Packet::createRead(mem_req);
+./cpu/checker/cpu_impl.hh:                    PacketPtr pkt = new Packet(mem_req, MemCmd::ReadReq);
+./cpu/minor/exec_context.hh:    bool mwait(PacketPtr pkt) override
+./cpu/minor/fetch1.hh:        bool recvTimingResp(PacketPtr pkt)
+./cpu/minor/fetch1.hh:        PacketPtr packet;
+./cpu/minor/fetch1.hh:    virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/minor/lsq.cc:LSQ::SingleDataRequest::retireResponse(PacketPtr packet_)
+./cpu/minor/lsq.cc:        PacketPtr fragment_packet =
+./cpu/minor/lsq.cc:PacketPtr
+./cpu/minor/lsq.cc:LSQ::SplitDataRequest::retireResponse(PacketPtr response)
+./cpu/minor/lsq.cc:        PacketPtr packet = request->getHeadPacket();
+./cpu/minor/lsq.cc:LSQ::recvTimingResp(PacketPtr response)
+./cpu/minor/lsq.cc:PacketPtr
+./cpu/minor/lsq.cc:    PacketPtr ret = isLoad ? Packet::createRead(request)
+./cpu/minor/lsq.cc:LSQ::recvTimingSnoopReq(PacketPtr pkt)
+./cpu/minor/lsq.cc:    PacketPtr pkt = request->packet;
+./cpu/minor/fetch1.cc:Fetch1::recvTimingResp(PacketPtr response)
+./cpu/minor/fetch1.cc:    PacketPtr packet = response->packet;
+./cpu/minor/execute.cc:    PacketPtr packet = response->packet;
+./cpu/minor/lsq.hh:        bool recvTimingResp(PacketPtr pkt) override
+./cpu/minor/lsq.hh:        void recvTimingSnoopReq(PacketPtr pkt) override
+./cpu/minor/lsq.hh:        void recvFunctionalSnoop(PacketPtr pkt) override { }
+./cpu/minor/lsq.hh:        PacketPtr packet;
+./cpu/minor/lsq.hh:        virtual PacketPtr getHeadPacket() = 0;
+./cpu/minor/lsq.hh:        virtual void retireResponse(PacketPtr packet_) = 0;
+./cpu/minor/lsq.hh:        PacketPtr getHeadPacket()
+./cpu/minor/lsq.hh:        void retireResponse(PacketPtr packet_) { }
+./cpu/minor/lsq.hh:        PacketPtr getHeadPacket() { return packet; }
+./cpu/minor/lsq.hh:        void retireResponse(PacketPtr packet_);
+./cpu/minor/lsq.hh:        PacketPtr getHeadPacket();
+./cpu/minor/lsq.hh:        void retireResponse(PacketPtr packet_);
+./cpu/minor/lsq.hh:    bool recvTimingResp(PacketPtr pkt);
+./cpu/minor/lsq.hh:    void recvTimingSnoopReq(PacketPtr pkt);
+./cpu/minor/lsq.hh:PacketPtr makePacketForRequest(const RequestPtr &request, bool isLoad,
+./cpu/base_dyn_inst.hh:    bool mwait(PacketPtr pkt) { return cpu->mwait(threadNumber, pkt); }
+./cpu/trace/trace_cpu.cc:PacketPtr
+./cpu/trace/trace_cpu.cc:    PacketPtr pkt;
+./cpu/trace/trace_cpu.cc:TraceCPU::ElasticDataGen::completeMemAccess(PacketPtr pkt)
+./cpu/trace/trace_cpu.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/trace/trace_cpu.cc:TraceCPU::IcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/trace/trace_cpu.cc:TraceCPU::dcacheRecvTimingResp(PacketPtr pkt)
+./cpu/trace/trace_cpu.cc:TraceCPU::DcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/trace/trace_cpu.hh:    void dcacheRecvTimingResp(PacketPtr pkt);
+./cpu/trace/trace_cpu.hh:        bool recvTimingResp(PacketPtr pkt);
+./cpu/trace/trace_cpu.hh:        void recvTimingSnoopReq(PacketPtr pkt) { }
+./cpu/trace/trace_cpu.hh:        bool recvTimingResp(PacketPtr pkt);
+./cpu/trace/trace_cpu.hh:        void recvTimingSnoopReq(PacketPtr pkt)
+./cpu/trace/trace_cpu.hh:        void recvFunctionalSnoop(PacketPtr pkt)
+./cpu/trace/trace_cpu.hh:        /** PacketPtr used to store the packet to retry. */
+./cpu/trace/trace_cpu.hh:        PacketPtr retryPkt;
+./cpu/trace/trace_cpu.hh:        PacketPtr executeMemReq(GraphNode* node_ptr);
+./cpu/trace/trace_cpu.hh:        void completeMemAccess(PacketPtr pkt);
+./cpu/trace/trace_cpu.hh:        /** PacketPtr used to store the packet to retry. */
+./cpu/trace/trace_cpu.hh:        PacketPtr retryPkt;
+./cpu/testers/directedtest/RubyDirectedTester.cc:RubyDirectedTester::CpuPort::recvTimingResp(PacketPtr pkt)
+./cpu/testers/directedtest/InvalidateGenerator.cc:    PacketPtr pkt;
+./cpu/testers/directedtest/SeriesRequestGenerator.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/testers/directedtest/RubyDirectedTester.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/testers/rubytest/Check.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/testers/rubytest/Check.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/testers/rubytest/Check.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/testers/rubytest/Check.cc:    PacketPtr pkt = new Packet(req, MemCmd::ReadReq);
+./cpu/testers/rubytest/RubyTester.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/testers/rubytest/RubyTester.cc:RubyTester::CpuPort::recvTimingResp(PacketPtr pkt)
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.hh:    PacketPtr retryPkt;
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.hh:    void completeRequest(PacketPtr pkt);
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.hh:    void sendPkt(PacketPtr pkt);
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.cc:GarnetSyntheticTraffic::CpuPort::recvTimingResp(PacketPtr pkt)
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.cc:GarnetSyntheticTraffic::sendPkt(PacketPtr pkt)
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.cc:GarnetSyntheticTraffic::completeRequest(PacketPtr pkt)
+./cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.cc:    PacketPtr pkt = new Packet(req, requestType);
+./cpu/testers/memtest/memtest.cc:MemTest::CpuPort::recvTimingResp(PacketPtr pkt)
+./cpu/testers/memtest/memtest.cc:MemTest::sendPkt(PacketPtr pkt) {
+./cpu/testers/memtest/memtest.cc:MemTest::completeRequest(PacketPtr pkt, bool functional)
+./cpu/testers/memtest/memtest.cc:    PacketPtr pkt = nullptr;
+./cpu/testers/memtest/memtest.hh:        bool recvTimingResp(PacketPtr pkt);
+./cpu/testers/memtest/memtest.hh:        void recvTimingSnoopReq(PacketPtr pkt) { }
+./cpu/testers/memtest/memtest.hh:        void recvFunctionalSnoop(PacketPtr pkt) { }
+./cpu/testers/memtest/memtest.hh:        Tick recvAtomicSnoop(PacketPtr pkt) { return 0; }
+./cpu/testers/memtest/memtest.hh:    PacketPtr retryPkt;
+./cpu/testers/memtest/memtest.hh:    void completeRequest(PacketPtr pkt, bool functional = false);
+./cpu/testers/memtest/memtest.hh:    bool sendPkt(PacketPtr pkt);
+./cpu/testers/traffic_gen/random_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/base.cc:        PacketPtr pkt = activeGenerator->getNextPacket();
+./cpu/testers/traffic_gen/base.cc:BaseTrafficGen::TrafficGenPort::recvTimingResp(PacketPtr pkt)
+./cpu/testers/traffic_gen/exit_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/trace_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/trace_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/trace_gen.cc:    PacketPtr pkt = getPacket(currElement.addr + addrOffset,
+./cpu/testers/traffic_gen/dram_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/dram_gen.cc:    PacketPtr pkt = getPacket(addr, blocksize,
+./cpu/testers/traffic_gen/base_gen.hh:    PacketPtr getPacket(Addr addr, unsigned size, const MemCmd& cmd,
+./cpu/testers/traffic_gen/base_gen.hh:    virtual PacketPtr getNextPacket() = 0;
+./cpu/testers/traffic_gen/dram_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/base_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/base_gen.cc:    PacketPtr pkt = new Packet(req, cmd);
+./cpu/testers/traffic_gen/exit_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/dram_rot_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/idle_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/linear_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/linear_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/linear_gen.cc:    PacketPtr pkt = getPacket(nextAddr, blocksize,
+./cpu/testers/traffic_gen/base.hh:        bool recvTimingResp(PacketPtr pkt);
+./cpu/testers/traffic_gen/base.hh:        void recvTimingSnoopReq(PacketPtr pkt) { }
+./cpu/testers/traffic_gen/base.hh:        void recvFunctionalSnoop(PacketPtr pkt) { }
+./cpu/testers/traffic_gen/base.hh:        Tick recvAtomicSnoop(PacketPtr pkt) { return 0; }
+./cpu/testers/traffic_gen/base.hh:    PacketPtr retryPkt;
+./cpu/testers/traffic_gen/idle_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/random_gen.hh:    PacketPtr getNextPacket();
+./cpu/testers/traffic_gen/dram_rot_gen.cc:PacketPtr
+./cpu/testers/traffic_gen/dram_rot_gen.cc:    PacketPtr pkt = getPacket(addr, blocksize,
+./cpu/base.hh:    bool doMonitor(PacketPtr pkt);
+./cpu/base.hh:    bool mwait(ThreadID tid, PacketPtr pkt);
+./cpu/o3/fetch_impl.hh:DefaultFetch<Impl>::processCacheCompletion(PacketPtr pkt)
+./cpu/o3/fetch_impl.hh:        PacketPtr data_pkt = new Packet(mem_req, MemCmd::ReadReq);
+./cpu/o3/cpu.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/cpu.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/cpu.hh:        virtual void recvTimingSnoopReq(PacketPtr pkt);
+./cpu/o3/cpu.hh:        virtual void recvFunctionalSnoop(PacketPtr pkt)
+./cpu/o3/cpu.hh:    ProbePointArg<PacketPtr> *ppInstAccessComplete;
+./cpu/o3/cpu.hh:    ProbePointArg<std::pair<DynInstPtr, PacketPtr> > *ppDataAccessComplete;
+./cpu/o3/cpu.cc:FullO3CPU<Impl>::IcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/o3/cpu.cc:FullO3CPU<Impl>::DcachePort::recvTimingResp(PacketPtr pkt)
+./cpu/o3/cpu.cc:FullO3CPU<Impl>::DcachePort::recvTimingSnoopReq(PacketPtr pkt)
+./cpu/o3/cpu.cc:    ppInstAccessComplete = new ProbePointArg<PacketPtr>(getProbeManager(), "InstAccessComplete");
+./cpu/o3/cpu.cc:    ppDataAccessComplete = new ProbePointArg<std::pair<DynInstPtr, PacketPtr> >(getProbeManager(), "DataAccessComplete");
+./cpu/o3/lsq_unit.hh:    void checkSnoop(PacketPtr pkt);
+./cpu/o3/lsq_unit.hh:    void completeDataAccess(PacketPtr pkt);
+./cpu/o3/lsq_unit.hh:    void writeback(const DynInstPtr &inst, PacketPtr pkt);
+./cpu/o3/lsq_unit.hh:    bool trySendPacket(bool isLoad, PacketPtr data_pkt);
+./cpu/o3/lsq_unit.hh:        WritebackEvent(const DynInstPtr &_inst, PacketPtr pkt,
+./cpu/o3/lsq_unit.hh:        PacketPtr pkt;
+./cpu/o3/lsq_unit.hh:    bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/lsq_unit.hh:    PacketPtr retryPkt;
+./cpu/o3/lsq_unit.hh:        PacketPtr main_pkt = new Packet(req->mainRequest(), MemCmd::ReadReq);
+./cpu/o3/lsq_unit.hh:                PacketPtr data_pkt = new Packet(req->mainRequest(),
+./cpu/o3/dyn_inst.hh:    Fault completeAcc(PacketPtr pkt);
+./cpu/o3/fetch.hh:    void processCacheCompletion(PacketPtr pkt);
+./cpu/o3/fetch.hh:    PacketPtr retryPkt;
+./cpu/o3/lsq_unit_impl.hh:        PacketPtr _pkt, LSQUnit *lsq_ptr)
+./cpu/o3/lsq_unit_impl.hh:LSQUnit<Impl>::recvTimingResp(PacketPtr pkt)
+./cpu/o3/lsq_unit_impl.hh:LSQUnit<Impl>::completeDataAccess(PacketPtr pkt)
+./cpu/o3/lsq_unit_impl.hh:LSQUnit<Impl>::checkSnoop(PacketPtr pkt)
+./cpu/o3/lsq_unit_impl.hh:                PacketPtr new_pkt = new Packet(*req->packet());
+./cpu/o3/lsq_unit_impl.hh:            PacketPtr main_pkt = new Packet(req->mainRequest(),
+./cpu/o3/lsq_unit_impl.hh:LSQUnit<Impl>::writeback(const DynInstPtr &inst, PacketPtr pkt)
+./cpu/o3/lsq_unit_impl.hh:LSQUnit<Impl>::trySendPacket(bool isLoad, PacketPtr data_pkt)
+./cpu/o3/lsq.hh:        PacketPtr mainPkt;
+./cpu/o3/lsq.hh:        PacketPtr pendingPacket;
+./cpu/o3/lsq.hh:        std::vector<PacketPtr> _packets;
+./cpu/o3/lsq.hh:        PacketPtr packet(int idx = 0) { return _packets.at(idx); }
+./cpu/o3/lsq.hh:        virtual PacketPtr
+./cpu/o3/lsq.hh:        virtual bool recvTimingResp(PacketPtr pkt) = 0;
+./cpu/o3/lsq.hh:        virtual void handleIprWrite(ThreadContext *thread, PacketPtr pkt) = 0;
+./cpu/o3/lsq.hh:        virtual Cycles handleIprRead(ThreadContext *thread, PacketPtr pkt) = 0;
+./cpu/o3/lsq.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/lsq.hh:        virtual void handleIprWrite(ThreadContext *thread, PacketPtr pkt);
+./cpu/o3/lsq.hh:        virtual Cycles handleIprRead(ThreadContext *thread, PacketPtr pkt);
+./cpu/o3/lsq.hh:        PacketPtr _mainPacket;
+./cpu/o3/lsq.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/lsq.hh:        virtual void handleIprWrite(ThreadContext *thread, PacketPtr pkt);
+./cpu/o3/lsq.hh:        virtual Cycles handleIprRead(ThreadContext *thread, PacketPtr pkt);
+./cpu/o3/lsq.hh:        virtual PacketPtr mainPacket();
+./cpu/o3/lsq.hh:    void completeDataAccess(PacketPtr pkt);
+./cpu/o3/lsq.hh:    bool recvTimingResp(PacketPtr pkt);
+./cpu/o3/lsq.hh:    void recvTimingSnoopReq(PacketPtr pkt);
+./cpu/o3/lsq_impl.hh:LSQ<Impl>::completeDataAccess(PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:LSQ<Impl>::recvTimingResp(PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:LSQ<Impl>::recvTimingSnoopReq(PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:PacketPtr
+./cpu/o3/lsq_impl.hh:LSQ<Impl>::SingleDataRequest::recvTimingResp(PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:LSQ<Impl>::SplitDataRequest::recvTimingResp(PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:        PacketPtr resp = isLoad()
+./cpu/o3/lsq_impl.hh:            PacketPtr pkt = isLoad() ? Packet::createRead(r)
+./cpu/o3/lsq_impl.hh:                                             PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:                                            PacketPtr mainPkt)
+./cpu/o3/lsq_impl.hh:        PacketPtr pkt = new Packet(r, MemCmd::WriteReq);
+./cpu/o3/lsq_impl.hh:                                            PacketPtr pkt)
+./cpu/o3/lsq_impl.hh:                                           PacketPtr mainPkt)
+./cpu/o3/lsq_impl.hh:        PacketPtr pkt = new Packet(r, MemCmd::ReadReq);
+./cpu/o3/dyn_inst_impl.hh:BaseO3DynInst<Impl>::completeAcc(PacketPtr pkt)
+./sim/probe/mem.hh:    explicit PacketInfo(const PacketPtr& pkt) :
+./sim/system.hh:        bool recvTimingResp(PacketPtr pkt) override
+./mem/dramsim2.cc:DRAMSim2::recvAtomic(PacketPtr pkt)
+./mem/dramsim2.cc:DRAMSim2::recvFunctional(PacketPtr pkt)
+./mem/dramsim2.cc:DRAMSim2::recvTimingReq(PacketPtr pkt)
+./mem/dramsim2.cc:DRAMSim2::accessAndRespond(PacketPtr pkt)
+./mem/dramsim2.cc:    PacketPtr pkt = p->second.front();
+./mem/dramsim2.cc:DRAMSim2::MemoryPort::recvAtomic(PacketPtr pkt)
+./mem/dramsim2.cc:DRAMSim2::MemoryPort::recvFunctional(PacketPtr pkt)
+./mem/dramsim2.cc:DRAMSim2::MemoryPort::recvTimingReq(PacketPtr pkt)
+./mem/bridge.hh:        const PacketPtr pkt;
+./mem/bridge.hh:        DeferredPacket(PacketPtr _pkt, Tick _tick) : tick(_tick), pkt(_pkt)
+./mem/bridge.hh:        void schedTimingResp(PacketPtr pkt, Tick when);
+./mem/bridge.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/bridge.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/bridge.hh:        void recvFunctional(PacketPtr pkt);
+./mem/bridge.hh:        void schedTimingReq(PacketPtr pkt, Tick when);
+./mem/bridge.hh:        bool trySatisfyFunctional(PacketPtr pkt);
+./mem/bridge.hh:        bool recvTimingResp(PacketPtr pkt);
+./mem/protocol/RubySlicc_Types.sm:  PacketPtr pkt,             desc="Packet associated with this request";
+./mem/protocol/RubySlicc_Exports.sm:external_type(PacketPtr, primitive="yes");
+./mem/noncoherent_xbar.cc:NoncoherentXBar::recvTimingReq(PacketPtr pkt, PortID slave_port_id)
+./mem/noncoherent_xbar.cc:NoncoherentXBar::recvTimingResp(PacketPtr pkt, PortID master_port_id)
+./mem/noncoherent_xbar.cc:NoncoherentXBar::recvAtomic(PacketPtr pkt, PortID slave_port_id)
+./mem/noncoherent_xbar.cc:NoncoherentXBar::recvFunctional(PacketPtr pkt, PortID slave_port_id)
+./mem/simple_mem.hh:        const PacketPtr pkt;
+./mem/simple_mem.hh:        DeferredPacket(PacketPtr _pkt, Tick _tick) : tick(_tick), pkt(_pkt)
+./mem/simple_mem.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/simple_mem.hh:        void recvFunctional(PacketPtr pkt);
+./mem/simple_mem.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/simple_mem.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/simple_mem.hh:    void recvFunctional(PacketPtr pkt);
+./mem/simple_mem.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/physical.hh:    void access(PacketPtr pkt);
+./mem/physical.hh:    void functionalAccess(PacketPtr pkt);
+Binary file ./mem/slicc/symbols/StateMachine.pyc matches
+./mem/slicc/symbols/StateMachine.py:    int functionalWriteBuffers(PacketPtr&);
+./mem/slicc/symbols/StateMachine.py:$c_ident::functionalWriteBuffers(PacketPtr& pkt)
+./mem/simple_mem.cc:SimpleMemory::recvAtomic(PacketPtr pkt)
+./mem/simple_mem.cc:SimpleMemory::recvFunctional(PacketPtr pkt)
+./mem/simple_mem.cc:SimpleMemory::recvTimingReq(PacketPtr pkt)
+./mem/simple_mem.cc:SimpleMemory::MemoryPort::recvAtomic(PacketPtr pkt)
+./mem/simple_mem.cc:SimpleMemory::MemoryPort::recvFunctional(PacketPtr pkt)
+./mem/simple_mem.cc:SimpleMemory::MemoryPort::recvTimingReq(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvFunctional(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvFunctionalSnoop(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvAtomic(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvAtomicSnoop(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvTimingReq(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvTimingResp(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvTimingSnoopReq(PacketPtr pkt)
+./mem/mem_checker_monitor.cc:MemCheckerMonitor::recvTimingSnoopResp(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        void recvFunctionalSnoop(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        Tick recvAtomicSnoop(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        bool recvTimingResp(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        void recvTimingSnoopReq(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        void recvFunctional(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        Tick recvAtomic(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        bool recvTimingReq(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:        bool recvTimingSnoopResp(PacketPtr pkt)
+./mem/mem_checker_monitor.hh:    void recvFunctional(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    void recvFunctionalSnoop(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    Tick recvAtomicSnoop(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    bool recvTimingResp(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    void recvTimingSnoopReq(PacketPtr pkt);
+./mem/mem_checker_monitor.hh:    bool recvTimingSnoopResp(PacketPtr pkt);
+./mem/comm_monitor.cc:CommMonitor::recvFunctional(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvFunctionalSnoop(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvAtomic(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvAtomicSnoop(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvTimingReq(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvTimingResp(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvTimingSnoopReq(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::recvTimingSnoopResp(PacketPtr pkt)
+./mem/comm_monitor.cc:CommMonitor::tryTiming(PacketPtr pkt)
+./mem/packet.cc:Packet::copyResponderFlags(const PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::PioMasterPort::recvTimingResp(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:bool RubyPort::MemMasterPort::recvTimingResp(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::PioSlavePort::recvTimingReq(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::PioSlavePort::recvAtomic(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::MemSlavePort::recvTimingReq(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::MemSlavePort::recvAtomic(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::MemSlavePort::recvFunctional(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::ruby_hit_callback(PacketPtr pkt)
+./mem/ruby/system/RubyPort.cc:RubyPort::MemSlavePort::hitCallback(PacketPtr pkt)
+./mem/ruby/system/DMASequencer.cc:                       PacketPtr pkt)
+./mem/ruby/system/DMASequencer.cc:DMASequencer::makeRequest(PacketPtr pkt)
+./mem/ruby/system/DMASequencer.cc:        PacketPtr pkt = active_request.pkt;
+./mem/ruby/system/Sequencer.cc:Sequencer::insertRequest(PacketPtr pkt, RubyRequestType request_type)
+./mem/ruby/system/Sequencer.cc:    PacketPtr pkt = srequest->pkt;
+./mem/ruby/system/Sequencer.cc:Sequencer::makeRequest(PacketPtr pkt)
+./mem/ruby/system/Sequencer.cc:Sequencer::issueRequest(PacketPtr pkt, RubyRequestType secondary_type)
+./mem/ruby/system/RubyPortProxy.hh:    RequestStatus makeRequest(PacketPtr pkt);
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::getRequestStatus(PacketPtr pkt, RubyRequestType request_type)
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::insertKernel(int wavefront_id, PacketPtr pkt)
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::insertRequest(PacketPtr pkt, RubyRequestType request_type)
+./mem/ruby/system/GPUCoalescer.cc:    PacketPtr pkt = srequest->pkt;
+./mem/ruby/system/GPUCoalescer.cc:    std::vector<PacketPtr> mylist;
+./mem/ruby/system/GPUCoalescer.cc:        PacketPtr pkt = reqCoalescer[request_line_address][i].pkt;
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::makeRequest(PacketPtr pkt)
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::issueRequest(PacketPtr pkt, RubyRequestType secondary_type)
+./mem/ruby/system/GPUCoalescer.cc:        PacketPtr tmpPkt = reqCoalescer[line_addr][i].pkt;
+./mem/ruby/system/GPUCoalescer.cc:        PacketPtr pkt = info.pkt;
+./mem/ruby/system/GPUCoalescer.cc:    PacketPtr pkt = srequest->pkt;
+./mem/ruby/system/GPUCoalescer.cc:    std::vector<PacketPtr> mylist;
+./mem/ruby/system/GPUCoalescer.cc:        PacketPtr pkt = reqCoalescer[request_line_address][i].pkt;
+./mem/ruby/system/GPUCoalescer.cc:GPUCoalescer::completeHitCallback(std::vector<PacketPtr> & mylist, int len)
+./mem/ruby/system/GPUCoalescer.cc:PacketPtr
+./mem/ruby/system/VIPERCoalescer.cc:VIPERCoalescer::makeRequest(PacketPtr pkt)
+./mem/ruby/system/RubySystem.cc:RubySystem::functionalRead(PacketPtr pkt)
+./mem/ruby/system/RubySystem.cc:RubySystem::functionalWrite(PacketPtr pkt)
+./mem/ruby/system/DMASequencer.hh:               int bytes_issued, uint8_t *data, PacketPtr pkt);
+./mem/ruby/system/DMASequencer.hh:    PacketPtr pkt;
+./mem/ruby/system/DMASequencer.hh:    RequestStatus makeRequest(PacketPtr pkt) override;
+./mem/ruby/system/Sequencer.hh:    PacketPtr pkt;
+./mem/ruby/system/Sequencer.hh:    SequencerRequest(PacketPtr _pkt, RubyRequestType _m_type,
+./mem/ruby/system/Sequencer.hh:    RequestStatus makeRequest(PacketPtr pkt);
+./mem/ruby/system/Sequencer.hh:    void issueRequest(PacketPtr pkt, RubyRequestType type);
+./mem/ruby/system/Sequencer.hh:    RequestStatus insertRequest(PacketPtr pkt, RubyRequestType request_type);
+./mem/ruby/system/RubyPortProxy.cc:RubyPortProxy::makeRequest(PacketPtr pkt)
+./mem/ruby/system/RubyPort.hh:        bool recvTimingResp(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        void hitCallback(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        void recvFunctional(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        bool recvTimingResp(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:        void recvFunctional(PacketPtr pkt)
+./mem/ruby/system/RubyPort.hh:    virtual RequestStatus makeRequest(PacketPtr pkt) = 0;
+./mem/ruby/system/RubyPort.hh:    void ruby_hit_callback(PacketPtr pkt);
+./mem/ruby/system/RubyPort.hh:    bool recvTimingResp(PacketPtr pkt, PortID master_port_id);
+./mem/ruby/system/GPUCoalescer.hh:    PacketPtr pkt;
+./mem/ruby/system/GPUCoalescer.hh:    GPUCoalescerRequest(PacketPtr _pkt, RubyRequestType _m_type,
+./mem/ruby/system/GPUCoalescer.hh:    RequestDesc(PacketPtr pkt, RubyRequestType p_type, RubyRequestType s_type)
+./mem/ruby/system/GPUCoalescer.hh:    PacketPtr pkt;
+./mem/ruby/system/GPUCoalescer.hh:    virtual RequestStatus makeRequest(PacketPtr pkt);
+./mem/ruby/system/GPUCoalescer.hh:    void insertKernel(int wavefront_id, PacketPtr pkt);
+./mem/ruby/system/GPUCoalescer.hh:    virtual void issueRequest(PacketPtr pkt, RubyRequestType type);
+./mem/ruby/system/GPUCoalescer.hh:    void completeHitCallback(std::vector<PacketPtr> & mylist, int len);
+./mem/ruby/system/GPUCoalescer.hh:    PacketPtr mapAddrToPkt(Addr address);
+./mem/ruby/system/GPUCoalescer.hh:    RequestStatus getRequestStatus(PacketPtr pkt,
+./mem/ruby/system/GPUCoalescer.hh:    bool insertRequest(PacketPtr pkt, RubyRequestType request_type);
+./mem/ruby/system/GPUCoalescer.hh:    std::unordered_map<int, PacketPtr> kernelEndList;
+./mem/ruby/system/VIPERCoalescer.hh:    RequestStatus makeRequest(PacketPtr pkt);
+./mem/ruby/slicc_interface/RubyRequest.hh:    PacketPtr m_pkt;
+./mem/ruby/slicc_interface/RubyRequest.hh:        PacketPtr _pkt, PrefetchBit _pb = PrefetchBit_No,
+./mem/ruby/slicc_interface/RubyRequest.hh:        RubyAccessMode _access_mode, PacketPtr _pkt, PrefetchBit _pb,
+./mem/ruby/slicc_interface/RubyRequest.hh:        RubyAccessMode _access_mode, PacketPtr _pkt, PrefetchBit _pb,
+./mem/ruby/slicc_interface/AbstractController.cc:    PacketPtr pkt = Packet::createRead(req);
+./mem/ruby/slicc_interface/AbstractController.cc:    PacketPtr pkt = Packet::createWrite(req);
+./mem/ruby/slicc_interface/AbstractController.cc:    PacketPtr pkt = Packet::createWrite(req);
+./mem/ruby/slicc_interface/AbstractController.cc:AbstractController::functionalMemoryRead(PacketPtr pkt)
+./mem/ruby/slicc_interface/AbstractController.cc:AbstractController::functionalMemoryWrite(PacketPtr pkt)
+./mem/ruby/slicc_interface/AbstractController.cc:AbstractController::recvTimingResp(PacketPtr pkt)
+./mem/ruby/slicc_interface/AbstractController.cc:AbstractController::recvAtomic(PacketPtr pkt)
+./mem/ruby/slicc_interface/AbstractController.cc:AbstractController::MemoryPort::recvTimingResp(PacketPtr pkt)
+./mem/ruby/slicc_interface/AbstractController.hh:    virtual void functionalRead(const Addr &addr, PacketPtr) = 0;
+./mem/ruby/slicc_interface/AbstractController.hh:    void functionalMemoryRead(PacketPtr);
+./mem/ruby/slicc_interface/AbstractController.hh:    virtual int functionalWriteBuffers(PacketPtr&) = 0;
+./mem/ruby/slicc_interface/AbstractController.hh:    virtual int functionalWrite(const Addr &addr, PacketPtr) = 0;
+./mem/ruby/slicc_interface/AbstractController.hh:    int functionalMemoryWrite(PacketPtr);
+./mem/ruby/slicc_interface/AbstractController.hh:    void recvTimingResp(PacketPtr pkt);
+./mem/ruby/slicc_interface/AbstractController.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/ruby/slicc_interface/AbstractController.hh:        bool recvTimingResp(PacketPtr pkt);
+./mem/mport.cc:MessageSlavePort::recvAtomic(PacketPtr pkt)
+./mem/coherent_xbar.cc:CoherentXBar::recvTimingReq(PacketPtr pkt, PortID slave_port_id)
+./mem/coherent_xbar.cc:    PacketPtr rsp_pkt = pkt;
+./mem/coherent_xbar.cc:        PacketPtr deferred_rsp = pkt->isWrite() ? nullptr : pkt;
+./mem/coherent_xbar.cc:CoherentXBar::recvTimingResp(PacketPtr pkt, PortID master_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::recvTimingSnoopReq(PacketPtr pkt, PortID master_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::recvTimingSnoopResp(PacketPtr pkt, PortID slave_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::forwardTiming(PacketPtr pkt, PortID exclude_slave_port_id,
+./mem/coherent_xbar.cc:CoherentXBar::recvAtomic(PacketPtr pkt, PortID slave_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::recvAtomicSnoop(PacketPtr pkt, PortID master_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::forwardAtomic(PacketPtr pkt, PortID exclude_slave_port_id,
+./mem/coherent_xbar.cc:CoherentXBar::recvFunctional(PacketPtr pkt, PortID slave_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::recvFunctionalSnoop(PacketPtr pkt, PortID master_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::forwardFunctional(PacketPtr pkt, PortID exclude_slave_port_id)
+./mem/coherent_xbar.cc:CoherentXBar::sinkPacket(const PacketPtr pkt) const
+./mem/coherent_xbar.cc:CoherentXBar::forwardPacket(const PacketPtr pkt)
+./mem/packet_queue.cc:PacketQueue::trySatisfyFunctional(PacketPtr pkt)
+./mem/packet_queue.cc:PacketQueue::schedSendTiming(PacketPtr pkt, Tick when)
+./mem/packet_queue.cc:ReqPacketQueue::sendTiming(PacketPtr pkt)
+./mem/packet_queue.cc:SnoopRespPacketQueue::sendTiming(PacketPtr pkt)
+./mem/packet_queue.cc:RespPacketQueue::sendTiming(PacketPtr pkt)
+./mem/hmc_controller.hh:    virtual bool recvTimingReq(PacketPtr pkt, PortID slave_port_id);
+./mem/serial_link.hh:        const PacketPtr pkt;
+./mem/serial_link.hh:        DeferredPacket(PacketPtr _pkt, Tick _tick) : tick(_tick), pkt(_pkt)
+./mem/serial_link.hh:        void schedTimingResp(PacketPtr pkt, Tick when);
+./mem/serial_link.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/serial_link.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/serial_link.hh:        void recvFunctional(PacketPtr pkt);
+./mem/serial_link.hh:        void schedTimingReq(PacketPtr pkt, Tick when);
+./mem/serial_link.hh:        bool trySatisfyFunctional(PacketPtr pkt);
+./mem/serial_link.hh:        bool recvTimingResp(PacketPtr pkt);
+./mem/dram_ctrl.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/dram_ctrl.hh:        void recvFunctional(PacketPtr pkt);
+./mem/dram_ctrl.hh:        bool recvTimingReq(PacketPtr);
+./mem/dram_ctrl.hh:        const PacketPtr pkt;
+./mem/dram_ctrl.hh:        DRAMPacket(PacketPtr _pkt, bool is_read, uint8_t _rank, uint8_t _bank,
+./mem/dram_ctrl.hh:    void addToReadQueue(PacketPtr pkt, unsigned int pktCount);
+./mem/dram_ctrl.hh:    void addToWriteQueue(PacketPtr pkt, unsigned int pktCount);
+./mem/dram_ctrl.hh:    void accessAndRespond(PacketPtr pkt, Tick static_latency);
+./mem/dram_ctrl.hh:    DRAMPacket* decodeAddr(PacketPtr pkt, Addr dramPktAddr, unsigned int size,
+./mem/dram_ctrl.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/dram_ctrl.hh:    void recvFunctional(PacketPtr pkt);
+./mem/dram_ctrl.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/abstract_mem.hh:    bool checkLockedAddrList(PacketPtr pkt);
+./mem/abstract_mem.hh:    void trackLoadLocked(PacketPtr pkt);
+./mem/abstract_mem.hh:    bool writeOK(PacketPtr pkt) {
+./mem/abstract_mem.hh:    void access(PacketPtr pkt);
+./mem/abstract_mem.hh:    void functionalAccess(PacketPtr pkt);
+./mem/qport.hh:    void schedTimingResp(PacketPtr pkt, Tick when)
+./mem/qport.hh:    bool trySatisfyFunctional(PacketPtr pkt)
+./mem/qport.hh:    void schedTimingReq(PacketPtr pkt, Tick when)
+./mem/qport.hh:    void schedTimingSnoopResp(PacketPtr pkt, Tick when)
+./mem/qport.hh:    bool trySatisfyFunctional(PacketPtr pkt)
+./mem/physical.cc:PhysicalMemory::access(PacketPtr pkt)
+./mem/physical.cc:PhysicalMemory::functionalAccess(PacketPtr pkt)
+./mem/addr_mapper.hh:        void recvFunctionalSnoop(PacketPtr pkt)
+./mem/addr_mapper.hh:        Tick recvAtomicSnoop(PacketPtr pkt)
+./mem/addr_mapper.hh:        bool recvTimingResp(PacketPtr pkt)
+./mem/addr_mapper.hh:        void recvTimingSnoopReq(PacketPtr pkt)
+./mem/addr_mapper.hh:        void recvFunctional(PacketPtr pkt)
+./mem/addr_mapper.hh:        Tick recvAtomic(PacketPtr pkt)
+./mem/addr_mapper.hh:        bool recvTimingReq(PacketPtr pkt)
+./mem/addr_mapper.hh:        bool recvTimingSnoopResp(PacketPtr pkt)
+./mem/addr_mapper.hh:    void recvFunctional(PacketPtr pkt);
+./mem/addr_mapper.hh:    void recvFunctionalSnoop(PacketPtr pkt);
+./mem/addr_mapper.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/addr_mapper.hh:    Tick recvAtomicSnoop(PacketPtr pkt);
+./mem/addr_mapper.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/addr_mapper.hh:    bool recvTimingResp(PacketPtr pkt);
+./mem/addr_mapper.hh:    void recvTimingSnoopReq(PacketPtr pkt);
+./mem/addr_mapper.hh:    bool recvTimingSnoopResp(PacketPtr pkt);
+./mem/mport.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/mport.hh:    virtual Tick recvMessage(PacketPtr pkt) = 0;
+./mem/mport.hh:    bool recvTimingResp(PacketPtr pkt) { recvResponse(pkt); return true; }
+./mem/mport.hh:    virtual Tick recvResponse(PacketPtr pkt)
+./mem/dramsim2.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/dramsim2.hh:        void recvFunctional(PacketPtr pkt);
+./mem/dramsim2.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/dramsim2.hh:    std::unordered_map<Addr, std::queue<PacketPtr> > outstandingReads;
+./mem/dramsim2.hh:    std::unordered_map<Addr, std::queue<PacketPtr> > outstandingWrites;
+./mem/dramsim2.hh:    std::deque<PacketPtr> responseQueue;
+./mem/dramsim2.hh:    void accessAndRespond(PacketPtr pkt);
+./mem/dramsim2.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/dramsim2.hh:    void recvFunctional(PacketPtr pkt);
+./mem/dramsim2.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/packet_queue.hh:        PacketPtr pkt;  ///< Pointer to the packet to transmit
+./mem/packet_queue.hh:        DeferredPacket(Tick t, PacketPtr p)
+./mem/packet_queue.hh:    virtual bool sendTiming(PacketPtr pkt) = 0;
+./mem/packet_queue.hh:    bool trySatisfyFunctional(PacketPtr pkt);
+./mem/packet_queue.hh:    void schedSendTiming(PacketPtr pkt, Tick when);
+./mem/packet_queue.hh:    bool sendTiming(PacketPtr pkt);
+./mem/packet_queue.hh:    bool sendTiming(PacketPtr pkt);
+./mem/packet_queue.hh:    bool sendTiming(PacketPtr pkt);
+./mem/bridge.cc:Bridge::BridgeMasterPort::recvTimingResp(PacketPtr pkt)
+./mem/bridge.cc:Bridge::BridgeSlavePort::recvTimingReq(PacketPtr pkt)
+./mem/bridge.cc:Bridge::BridgeMasterPort::schedTimingReq(PacketPtr pkt, Tick when)
+./mem/bridge.cc:Bridge::BridgeSlavePort::schedTimingResp(PacketPtr pkt, Tick when)
+./mem/bridge.cc:    PacketPtr pkt = req.pkt;
+./mem/bridge.cc:    PacketPtr pkt = resp.pkt;
+./mem/bridge.cc:Bridge::BridgeSlavePort::recvAtomic(PacketPtr pkt)
+./mem/bridge.cc:Bridge::BridgeSlavePort::recvFunctional(PacketPtr pkt)
+./mem/bridge.cc:Bridge::BridgeMasterPort::trySatisfyFunctional(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual bool recvTimingReq(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual bool recvTimingSnoopResp(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual Tick recvAtomic(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual void recvFunctional(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual bool recvTimingResp(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual void recvTimingSnoopReq(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual Tick recvAtomicSnoop(PacketPtr pkt)
+./mem/coherent_xbar.hh:        virtual void recvFunctionalSnoop(PacketPtr pkt)
+./mem/coherent_xbar.hh:        bool recvTimingResp(PacketPtr pkt)
+./mem/coherent_xbar.hh:    std::unordered_map<PacketId, PacketPtr> outstandingCMO;
+./mem/coherent_xbar.hh:    bool recvTimingReq(PacketPtr pkt, PortID slave_port_id);
+./mem/coherent_xbar.hh:    bool recvTimingResp(PacketPtr pkt, PortID master_port_id);
+./mem/coherent_xbar.hh:    void recvTimingSnoopReq(PacketPtr pkt, PortID master_port_id);
+./mem/coherent_xbar.hh:    bool recvTimingSnoopResp(PacketPtr pkt, PortID slave_port_id);
+./mem/coherent_xbar.hh:    void forwardTiming(PacketPtr pkt, PortID exclude_slave_port_id) {
+./mem/coherent_xbar.hh:    void forwardTiming(PacketPtr pkt, PortID exclude_slave_port_id,
+./mem/coherent_xbar.hh:    Tick recvAtomic(PacketPtr pkt, PortID slave_port_id);
+./mem/coherent_xbar.hh:    Tick recvAtomicSnoop(PacketPtr pkt, PortID master_port_id);
+./mem/coherent_xbar.hh:    std::pair<MemCmd, Tick> forwardAtomic(PacketPtr pkt,
+./mem/coherent_xbar.hh:    std::pair<MemCmd, Tick> forwardAtomic(PacketPtr pkt,
+./mem/coherent_xbar.hh:    void recvFunctional(PacketPtr pkt, PortID slave_port_id);
+./mem/coherent_xbar.hh:    void recvFunctionalSnoop(PacketPtr pkt, PortID master_port_id);
+./mem/coherent_xbar.hh:    void forwardFunctional(PacketPtr pkt, PortID exclude_slave_port_id);
+./mem/coherent_xbar.hh:    bool sinkPacket(const PacketPtr pkt) const;
+./mem/coherent_xbar.hh:    bool forwardPacket(const PacketPtr pkt);
+./mem/coherent_xbar.hh:    bool isDestination(const PacketPtr pkt) const
+./mem/port.hh:    Tick sendAtomic(PacketPtr pkt);
+./mem/port.hh:    void sendFunctional(PacketPtr pkt);
+./mem/port.hh:    bool sendTimingReq(PacketPtr pkt);
+./mem/port.hh:    bool tryTiming(PacketPtr pkt) const;
+./mem/port.hh:    bool sendTimingSnoopResp(PacketPtr pkt);
+./mem/port.hh:    virtual Tick recvAtomicSnoop(PacketPtr pkt)
+./mem/port.hh:    virtual void recvFunctionalSnoop(PacketPtr pkt)
+./mem/port.hh:    virtual bool recvTimingResp(PacketPtr pkt) = 0;
+./mem/port.hh:    virtual void recvTimingSnoopReq(PacketPtr pkt)
+./mem/port.hh:    Tick sendAtomicSnoop(PacketPtr pkt);
+./mem/port.hh:    void sendFunctionalSnoop(PacketPtr pkt);
+./mem/port.hh:    bool sendTimingResp(PacketPtr pkt);
+./mem/port.hh:    void sendTimingSnoopReq(PacketPtr pkt);
+./mem/port.hh:    virtual Tick recvAtomic(PacketPtr pkt) = 0;
+./mem/port.hh:    virtual void recvFunctional(PacketPtr pkt) = 0;
+./mem/port.hh:    virtual bool recvTimingReq(PacketPtr pkt) = 0;
+./mem/port.hh:    virtual bool tryTiming(PacketPtr pkt) {
+./mem/port.hh:    virtual bool recvTimingSnoopResp(PacketPtr pkt)
+./mem/xbar.hh:    void calcPacketTiming(PacketPtr pkt, Tick header_delay);
+./mem/noncoherent_xbar.hh:        virtual bool recvTimingReq(PacketPtr pkt)
+./mem/noncoherent_xbar.hh:        virtual Tick recvAtomic(PacketPtr pkt)
+./mem/noncoherent_xbar.hh:        virtual void recvFunctional(PacketPtr pkt)
+./mem/noncoherent_xbar.hh:        virtual bool recvTimingResp(PacketPtr pkt)
+./mem/noncoherent_xbar.hh:    virtual bool recvTimingReq(PacketPtr pkt, PortID slave_port_id);
+./mem/noncoherent_xbar.hh:    virtual bool recvTimingResp(PacketPtr pkt, PortID master_port_id);
+./mem/noncoherent_xbar.hh:    Tick recvAtomic(PacketPtr pkt, PortID slave_port_id);
+./mem/noncoherent_xbar.hh:    void recvFunctional(PacketPtr pkt, PortID slave_port_id);
+./mem/external_slave.cc:    PacketPtr responsePacket;
+./mem/external_slave.cc:    Tick recvAtomic(PacketPtr packet);
+./mem/external_slave.cc:    void recvFunctional(PacketPtr packet);
+./mem/external_slave.cc:    bool recvTimingReq(PacketPtr packet);
+./mem/external_slave.cc:    bool recvTimingSnoopResp(PacketPtr packet);
+./mem/external_slave.cc:    void recvFunctionalSnoop(PacketPtr packet);
+./mem/external_slave.cc:StubSlavePort::recvAtomic(PacketPtr packet)
+./mem/external_slave.cc:StubSlavePort::recvFunctional(PacketPtr packet)
+./mem/external_slave.cc:StubSlavePort::recvTimingReq(PacketPtr packet)
+./mem/external_slave.cc:StubSlavePort::recvTimingSnoopResp(PacketPtr packet)
+./mem/external_slave.cc:StubSlavePort::recvFunctionalSnoop(PacketPtr packet)
+./mem/port.cc:MasterPort::sendAtomic(PacketPtr pkt)
+./mem/port.cc:MasterPort::sendFunctional(PacketPtr pkt)
+./mem/port.cc:MasterPort::sendTimingReq(PacketPtr pkt)
+./mem/port.cc:MasterPort::tryTiming(PacketPtr pkt) const
+./mem/port.cc:MasterPort::sendTimingSnoopResp(PacketPtr pkt)
+./mem/port.cc:SlavePort::sendAtomicSnoop(PacketPtr pkt)
+./mem/port.cc:SlavePort::sendFunctionalSnoop(PacketPtr pkt)
+./mem/port.cc:SlavePort::sendTimingResp(PacketPtr pkt)
+./mem/port.cc:SlavePort::sendTimingSnoopReq(PacketPtr pkt)
+./mem/xbar.cc:BaseXBar::calcPacketTiming(PacketPtr pkt, Tick header_delay)
+./mem/comm_monitor.hh:        void recvFunctionalSnoop(PacketPtr pkt)
+./mem/comm_monitor.hh:        Tick recvAtomicSnoop(PacketPtr pkt)
+./mem/comm_monitor.hh:        bool recvTimingResp(PacketPtr pkt)
+./mem/comm_monitor.hh:        void recvTimingSnoopReq(PacketPtr pkt)
+./mem/comm_monitor.hh:        void recvFunctional(PacketPtr pkt)
+./mem/comm_monitor.hh:        Tick recvAtomic(PacketPtr pkt)
+./mem/comm_monitor.hh:        bool recvTimingReq(PacketPtr pkt)
+./mem/comm_monitor.hh:        bool recvTimingSnoopResp(PacketPtr pkt)
+./mem/comm_monitor.hh:        bool tryTiming(PacketPtr pkt)
+./mem/comm_monitor.hh:    void recvFunctional(PacketPtr pkt);
+./mem/comm_monitor.hh:    void recvFunctionalSnoop(PacketPtr pkt);
+./mem/comm_monitor.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/comm_monitor.hh:    Tick recvAtomicSnoop(PacketPtr pkt);
+./mem/comm_monitor.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/comm_monitor.hh:    bool recvTimingResp(PacketPtr pkt);
+./mem/comm_monitor.hh:    void recvTimingSnoopReq(PacketPtr pkt);
+./mem/comm_monitor.hh:    bool recvTimingSnoopResp(PacketPtr pkt);
+./mem/comm_monitor.hh:    bool tryTiming(PacketPtr pkt);
+./mem/serial_link.cc:SerialLink::SerialLinkMasterPort::recvTimingResp(PacketPtr pkt)
+./mem/serial_link.cc:SerialLink::SerialLinkSlavePort::recvTimingReq(PacketPtr pkt)
+./mem/serial_link.cc:SerialLink::SerialLinkMasterPort::schedTimingReq(PacketPtr pkt, Tick when)
+./mem/serial_link.cc:SerialLink::SerialLinkSlavePort::schedTimingResp(PacketPtr pkt, Tick when)
+./mem/serial_link.cc:    PacketPtr pkt = req.pkt;
+./mem/serial_link.cc:    PacketPtr pkt = resp.pkt;
+./mem/serial_link.cc:SerialLink::SerialLinkSlavePort::recvAtomic(PacketPtr pkt)
+./mem/serial_link.cc:SerialLink::SerialLinkSlavePort::recvFunctional(PacketPtr pkt)
+./mem/serial_link.cc:SerialLink::SerialLinkMasterPort::trySatisfyFunctional(PacketPtr pkt)
+./mem/qos/policy.cc:Policy::schedule(const PacketPtr pkt)
+./mem/qos/q_policy.hh:    typedef std::deque<PacketPtr> PacketQueue;
+./mem/qos/q_policy.hh:    virtual void enqueuePacket(PacketPtr pkt) {};
+./mem/qos/q_policy.hh:    void enqueuePacket(PacketPtr pkt) override;
+./mem/qos/policy.hh:    uint8_t schedule(const PacketPtr pkt);
+./mem/qos/mem_sink.hh:    using PacketQueue = std::deque<PacketPtr>;
+./mem/qos/mem_sink.hh:        Tick recvAtomic(PacketPtr pkt);
+./mem/qos/mem_sink.hh:        void recvFunctional(PacketPtr pkt);
+./mem/qos/mem_sink.hh:        bool recvTimingReq(PacketPtr pkt);
+./mem/qos/mem_sink.hh:    Tick recvAtomic(PacketPtr pkt);
+./mem/qos/mem_sink.hh:    void recvFunctional(PacketPtr pkt);
+./mem/qos/mem_sink.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/qos/mem_sink.cc:MemSinkCtrl::recvAtomic(PacketPtr pkt)
+./mem/qos/mem_sink.cc:MemSinkCtrl::recvFunctional(PacketPtr pkt)
+./mem/qos/mem_sink.cc:MemSinkCtrl::recvTimingReq(PacketPtr pkt)
+./mem/qos/mem_sink.cc:    PacketPtr pkt = nullptr;
+./mem/qos/mem_sink.cc:MemSinkCtrl::MemoryPort::recvAtomic(PacketPtr pkt)
+./mem/qos/mem_sink.cc:MemSinkCtrl::MemoryPort::recvFunctional(PacketPtr pkt)
+./mem/qos/mem_sink.cc:MemSinkCtrl::MemoryPort::recvTimingReq(PacketPtr pkt)
+./mem/qos/q_policy.cc:LrgQueuePolicy::enqueuePacket(PacketPtr pkt)
+./mem/qos/mem_ctrl.cc:MemCtrl::schedule(const PacketPtr pkt)
+./mem/qos/mem_ctrl.hh:                        uint64_t queue_entry_size, const PacketPtr pkt);
+./mem/qos/mem_ctrl.hh:    uint8_t schedule(const PacketPtr pkt);
+./mem/qos/mem_ctrl.hh:                     const PacketPtr pkt)
+./mem/mem_delay.hh: * methods receive a PacketPtr as their argument and return a delay in
+./mem/mem_delay.hh:        bool recvTimingResp(PacketPtr pkt) override;
+./mem/mem_delay.hh:        void recvFunctionalSnoop(PacketPtr pkt) override;
+./mem/mem_delay.hh:        Tick recvAtomicSnoop(PacketPtr pkt) override;
+./mem/mem_delay.hh:        void recvTimingSnoopReq(PacketPtr pkt) override;
+./mem/mem_delay.hh:        Tick recvAtomic(PacketPtr pkt) override;
+./mem/mem_delay.hh:        bool recvTimingReq(PacketPtr pkt) override;
+./mem/mem_delay.hh:        void recvFunctional(PacketPtr pkt) override;
+./mem/mem_delay.hh:        bool recvTimingSnoopResp(PacketPtr pkt) override;
+./mem/mem_delay.hh:        bool tryTiming(PacketPtr pkt) override { return true; }
+./mem/mem_delay.hh:    bool trySatisfyFunctional(PacketPtr pkt);
+./mem/mem_delay.hh:    virtual Tick delayReq(PacketPtr pkt) { return 0; }
+./mem/mem_delay.hh:    virtual Tick delayResp(PacketPtr pkt) { return 0; }
+./mem/mem_delay.hh:    virtual Tick delaySnoopResp(PacketPtr pkt) { return 0; }
+./mem/mem_delay.hh:    Tick delayReq(PacketPtr pkt) override;
+./mem/mem_delay.hh:    Tick delayResp(PacketPtr pkt) override;
+./mem/tport.cc:SimpleTimingPort::recvFunctional(PacketPtr pkt)
+./mem/tport.cc:SimpleTimingPort::recvTimingReq(PacketPtr pkt)
+./mem/abstract_mem.cc:AbstractMemory::trackLoadLocked(PacketPtr pkt)
+./mem/abstract_mem.cc:AbstractMemory::checkLockedAddrList(PacketPtr pkt)
+./mem/abstract_mem.cc:tracePacket(System *sys, const char *label, PacketPtr pkt)
+./mem/abstract_mem.cc:AbstractMemory::access(PacketPtr pkt)
+./mem/abstract_mem.cc:AbstractMemory::functionalAccess(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::recvAtomic(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::decodeAddr(PacketPtr pkt, Addr dramPktAddr, unsigned size,
+./mem/dram_ctrl.cc:DRAMCtrl::addToReadQueue(PacketPtr pkt, unsigned int pktCount)
+./mem/dram_ctrl.cc:DRAMCtrl::addToWriteQueue(PacketPtr pkt, unsigned int pktCount)
+./mem/dram_ctrl.cc:DRAMCtrl::recvTimingReq(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::accessAndRespond(PacketPtr pkt, Tick static_latency)
+./mem/dram_ctrl.cc:DRAMCtrl::recvFunctional(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::MemoryPort::recvFunctional(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::MemoryPort::recvAtomic(PacketPtr pkt)
+./mem/dram_ctrl.cc:DRAMCtrl::MemoryPort::recvTimingReq(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::trySatisfyFunctional(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::MasterPort::recvTimingResp(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::MasterPort::recvFunctionalSnoop(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::MasterPort::recvAtomicSnoop(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::MasterPort::recvTimingSnoopReq(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::SlavePort::recvAtomic(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::SlavePort::recvTimingReq(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::SlavePort::recvFunctional(PacketPtr pkt)
+./mem/mem_delay.cc:MemDelay::SlavePort::recvTimingSnoopResp(PacketPtr pkt)
+./mem/mem_delay.cc:SimpleMemDelay::delayReq(PacketPtr pkt)
+./mem/mem_delay.cc:SimpleMemDelay::delayResp(PacketPtr pkt)
+./mem/tport.hh:    void recvFunctional(PacketPtr pkt);
+./mem/tport.hh:    bool recvTimingReq(PacketPtr pkt);
+./mem/tport.hh:    virtual Tick recvAtomic(PacketPtr pkt) = 0;
+./mem/packet.hh:typedef Packet *PacketPtr;
+./mem/packet.hh:typedef std::list<PacketPtr> PacketList;
+./mem/packet.hh:    void copyResponderFlags(const PacketPtr pkt);
+./mem/packet.hh:    Packet(const PacketPtr pkt, bool clear_flags, bool alloc_data)
+./mem/packet.hh:    static PacketPtr
+./mem/packet.hh:    static PacketPtr
+./mem/packet.hh:    trySatisfyFunctional(PacketPtr other)
+./mem/addr_mapper.cc:AddrMapper::recvFunctional(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvFunctionalSnoop(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvAtomic(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvAtomicSnoop(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvTimingReq(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvTimingResp(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvTimingSnoopReq(PacketPtr pkt)
+./mem/addr_mapper.cc:AddrMapper::recvTimingSnoopResp(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::handleTimingReqHit(PacketPtr pkt, CacheBlk *blk, Tick request_time)
+./mem/cache/base.cc:BaseCache::handleTimingReqMiss(PacketPtr pkt, MSHR *mshr, CacheBlk *blk,
+./mem/cache/base.cc:BaseCache::recvTimingReq(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::handleUncacheableWriteResp(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::recvTimingResp(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::recvAtomic(PacketPtr pkt)
+./mem/cache/base.cc:        PacketPtr wb_pkt = writecleanBlk(blk, pkt->req->getDest(), pkt->id);
+./mem/cache/base.cc:BaseCache::functionalAccess(PacketPtr pkt, bool from_cpu_side)
+./mem/cache/base.cc:BaseCache::cmpAndSwap(CacheBlk *blk, PacketPtr pkt)
+./mem/cache/base.cc:        PacketPtr pkt = prefetcher->getPacket();
+./mem/cache/base.cc:BaseCache::satisfyRequest(PacketPtr pkt, CacheBlk *blk, bool, bool)
+./mem/cache/base.cc:BaseCache::access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/base.cc:            PacketPtr wbPkt = wb_entry->getTarget()->pkt;
+./mem/cache/base.cc:BaseCache::handleFill(PacketPtr pkt, CacheBlk *blk, PacketList &writebacks,
+./mem/cache/base.cc:BaseCache::allocateBlock(const PacketPtr pkt, PacketList &writebacks)
+./mem/cache/base.cc:    PacketPtr pkt = evictBlock(blk);
+./mem/cache/base.cc:PacketPtr
+./mem/cache/base.cc:    PacketPtr pkt =
+./mem/cache/base.cc:PacketPtr
+./mem/cache/base.cc:    PacketPtr pkt = new Packet(req, MemCmd::WriteClean, blkSize, id);
+./mem/cache/base.cc:    PacketPtr tgt_pkt = mshr->getTarget()->pkt;
+./mem/cache/base.cc:    PacketPtr pkt = createMissPacket(tgt_pkt, blk, mshr->needsWritable(),
+./mem/cache/base.cc:            PacketPtr wb_pkt = writecleanBlk(blk, pkt->req->getDest(),
+./mem/cache/base.cc:    PacketPtr tgt_pkt = wq_entry->getTarget()->pkt;
+./mem/cache/base.cc:    ppHit = new ProbePointArg<PacketPtr>(this->getProbeManager(), "Hit");
+./mem/cache/base.cc:    ppMiss = new ProbePointArg<PacketPtr>(this->getProbeManager(), "Miss");
+./mem/cache/base.cc:    ppFill = new ProbePointArg<PacketPtr>(this->getProbeManager(), "Fill");
+./mem/cache/base.cc:BaseCache::CpuSidePort::recvTimingSnoopResp(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::CpuSidePort::tryTiming(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::CpuSidePort::recvTimingReq(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::CpuSidePort::recvAtomic(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::CpuSidePort::recvFunctional(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::MemSidePort::recvTimingResp(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::MemSidePort::recvTimingSnoopReq(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::MemSidePort::recvAtomicSnoop(PacketPtr pkt)
+./mem/cache/base.cc:BaseCache::MemSidePort::recvFunctionalSnoop(PacketPtr pkt)
+./mem/cache/cache.cc:Cache::satisfyRequest(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/cache.cc:Cache::access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/cache.cc:        PacketPtr wbPkt = writebacks.front();
+./mem/cache/cache.cc:        PacketPtr wbPkt = writebacks.front();
+./mem/cache/cache.cc:Cache::recvTimingSnoopResp(PacketPtr pkt)
+./mem/cache/cache.cc:Cache::promoteWholeLineWrites(PacketPtr pkt)
+./mem/cache/cache.cc:Cache::handleTimingReqHit(PacketPtr pkt, CacheBlk *blk, Tick request_time)
+./mem/cache/cache.cc:Cache::handleTimingReqMiss(PacketPtr pkt, CacheBlk *blk, Tick forward_time,
+./mem/cache/cache.cc:        PacketPtr pf = nullptr;
+./mem/cache/cache.cc:Cache::recvTimingReq(PacketPtr pkt)
+./mem/cache/cache.cc:PacketPtr
+./mem/cache/cache.cc:Cache::createMissPacket(PacketPtr cpu_pkt, CacheBlk *blk,
+./mem/cache/cache.cc:    PacketPtr pkt = new Packet(cpu_pkt->req, cmd, blkSize);
+./mem/cache/cache.cc:Cache::handleAtomicReqMiss(PacketPtr pkt, CacheBlk *&blk,
+./mem/cache/cache.cc:    PacketPtr bus_pkt = createMissPacket(pkt, blk, pkt->needsWritable(),
+./mem/cache/cache.cc:Cache::recvAtomic(PacketPtr pkt)
+./mem/cache/cache.cc:Cache::serviceMSHRTargets(MSHR *mshr, const PacketPtr pkt, CacheBlk *blk)
+./mem/cache/cache.cc:PacketPtr
+./mem/cache/cache.cc:    PacketPtr pkt = (blk->isDirty() || writebackClean) ?
+./mem/cache/cache.cc:PacketPtr
+./mem/cache/cache.cc:    PacketPtr pkt = new Packet(req, MemCmd::CleanEvict);
+./mem/cache/cache.cc:Cache::doTimingSupplyResponse(PacketPtr req_pkt, const uint8_t *blk_data,
+./mem/cache/cache.cc:    PacketPtr pkt = req_pkt;
+./mem/cache/cache.cc:Cache::handleSnoop(PacketPtr pkt, CacheBlk *blk, bool is_timing,
+./mem/cache/cache.cc:            PacketPtr wb_pkt = writecleanBlk(blk, pkt->req->getDest(), pkt->id);
+./mem/cache/cache.cc:Cache::recvTimingSnoopReq(PacketPtr pkt)
+./mem/cache/cache.cc:        PacketPtr wb_pkt = wb_entry->getTarget()->pkt;
+./mem/cache/cache.cc:Cache::recvAtomicSnoop(PacketPtr pkt)
+./mem/cache/cache.cc:Cache::isCachedAbove(PacketPtr pkt, bool is_timing)
+./mem/cache/cache.cc:    PacketPtr tgt_pkt = mshr->getTarget()->pkt;
+./mem/cache/tags/base.cc:BaseTags::insertBlock(const PacketPtr pkt, CacheBlk *blk)
+./mem/cache/tags/fa_lru.cc:FALRU::insertBlock(const PacketPtr pkt, CacheBlk *blk)
+./mem/cache/tags/sector_tags.cc:SectorTags::insertBlock(const PacketPtr pkt, CacheBlk *blk)
+./mem/cache/tags/base_set_assoc.hh:    void insertBlock(const PacketPtr pkt, CacheBlk *blk) override
+./mem/cache/tags/sector_tags.hh:    void insertBlock(const PacketPtr pkt, CacheBlk *blk) override;
+./mem/cache/tags/base.hh:    virtual void insertBlock(const PacketPtr pkt, CacheBlk *blk);
+./mem/cache/tags/fa_lru.hh:    void insertBlock(const PacketPtr pkt, CacheBlk *blk) override;
+./mem/cache/write_queue.hh:                              PacketPtr pkt, Tick when_ready, Counter order);
+./mem/cache/cache_blk.hh:    void trackLoadLocked(PacketPtr pkt)
+./mem/cache/cache_blk.hh:    bool checkWrite(PacketPtr pkt)
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::satisfyRequest(PacketPtr pkt, CacheBlk *blk, bool, bool)
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/noncoherent_cache.cc:        PacketPtr wb_pkt = writebacks.front();
+./mem/cache/noncoherent_cache.cc:        PacketPtr wb_pkt = writebacks.front();
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::handleTimingReqMiss(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::recvTimingReq(PacketPtr pkt)
+./mem/cache/noncoherent_cache.cc:PacketPtr
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::createMissPacket(PacketPtr cpu_pkt, CacheBlk *blk,
+./mem/cache/noncoherent_cache.cc:    PacketPtr pkt = new Packet(cpu_pkt->req, MemCmd::ReadReq, blkSize);
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::handleAtomicReqMiss(PacketPtr pkt, CacheBlk *&blk,
+./mem/cache/noncoherent_cache.cc:    PacketPtr bus_pkt = createMissPacket(pkt, blk, true,
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::recvAtomic(PacketPtr pkt)
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::functionalAccess(PacketPtr pkt, bool from_cpu_side)
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::serviceMSHRTargets(MSHR *mshr, const PacketPtr pkt,
+./mem/cache/noncoherent_cache.cc:NoncoherentCache::recvTimingResp(PacketPtr pkt)
+./mem/cache/noncoherent_cache.cc:PacketPtr
+./mem/cache/noncoherent_cache.cc:    PacketPtr pkt = (blk->isDirty() || writebackClean) ?
+./mem/cache/queue.hh:    bool trySatisfyFunctional(PacketPtr pkt, Addr blk_addr)
+./mem/cache/mshr_queue.cc:MSHRQueue::allocate(Addr blk_addr, unsigned blk_size, PacketPtr pkt,
+./mem/cache/mshr.cc:MSHR::TargetList::updateFlags(PacketPtr pkt, Target::Source source,
+./mem/cache/mshr.cc:MSHR::TargetList::add(PacketPtr pkt, Tick readyTime,
+./mem/cache/mshr.cc:replaceUpgrade(PacketPtr pkt)
+./mem/cache/mshr.cc:MSHR::TargetList::trySatisfyFunctional(PacketPtr pkt)
+./mem/cache/mshr.cc:MSHR::allocate(Addr blk_addr, unsigned blk_size, PacketPtr target,
+./mem/cache/mshr.cc:MSHR::allocateTarget(PacketPtr pkt, Tick whenReady, Counter _order,
+./mem/cache/mshr.cc:    PacketPtr tgt_pkt = targets.front().pkt;
+./mem/cache/mshr.cc:MSHR::handleSnoop(PacketPtr pkt, Counter _order)
+./mem/cache/mshr.cc:    PacketPtr tgt_pkt = targets.front().pkt;
+./mem/cache/mshr.cc:        PacketPtr cp_pkt = will_respond ? new Packet(pkt, true, true) :
+./mem/cache/mshr.cc:MSHR::extractServiceableTargets(PacketPtr pkt)
+./mem/cache/mshr.cc:MSHR::trySatisfyFunctional(PacketPtr pkt)
+./mem/cache/noncoherent_cache.hh:    bool access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/noncoherent_cache.hh:    void handleTimingReqMiss(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/noncoherent_cache.hh:    void recvTimingReq(PacketPtr pkt) override;
+./mem/cache/noncoherent_cache.hh:    void serviceMSHRTargets(MSHR *mshr, const PacketPtr pkt,
+./mem/cache/noncoherent_cache.hh:    void recvTimingResp(PacketPtr pkt) override;
+./mem/cache/noncoherent_cache.hh:    void recvTimingSnoopReq(PacketPtr pkt) override {
+./mem/cache/noncoherent_cache.hh:    void recvTimingSnoopResp(PacketPtr pkt) override {
+./mem/cache/noncoherent_cache.hh:    Cycles handleAtomicReqMiss(PacketPtr pkt, CacheBlk *&blk,
+./mem/cache/noncoherent_cache.hh:    Tick recvAtomic(PacketPtr pkt) override;
+./mem/cache/noncoherent_cache.hh:    Tick recvAtomicSnoop(PacketPtr pkt) override {
+./mem/cache/noncoherent_cache.hh:    void functionalAccess(PacketPtr pkt, bool from_cpu_side) override;
+./mem/cache/noncoherent_cache.hh:    void satisfyRequest(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/noncoherent_cache.hh:    PacketPtr createMissPacket(PacketPtr cpu_pkt, CacheBlk *blk,
+./mem/cache/noncoherent_cache.hh:    M5_NODISCARD PacketPtr evictBlock(CacheBlk *blk) override;
+./mem/cache/mshr_queue.hh:    MSHR *allocate(Addr blk_addr, unsigned blk_size, PacketPtr pkt,
+./mem/cache/cache.hh:    void promoteWholeLineWrites(PacketPtr pkt);
+./mem/cache/cache.hh:    bool access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/cache.hh:    void handleTimingReqHit(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/cache.hh:    void handleTimingReqMiss(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/cache.hh:    void recvTimingReq(PacketPtr pkt) override;
+./mem/cache/cache.hh:    void serviceMSHRTargets(MSHR *mshr, const PacketPtr pkt,
+./mem/cache/cache.hh:    void recvTimingSnoopReq(PacketPtr pkt) override;
+./mem/cache/cache.hh:    void recvTimingSnoopResp(PacketPtr pkt) override;
+./mem/cache/cache.hh:    Cycles handleAtomicReqMiss(PacketPtr pkt, CacheBlk *&blk,
+./mem/cache/cache.hh:    Tick recvAtomic(PacketPtr pkt) override;
+./mem/cache/cache.hh:    Tick recvAtomicSnoop(PacketPtr pkt) override;
+./mem/cache/cache.hh:    void satisfyRequest(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/cache.hh:    void doTimingSupplyResponse(PacketPtr req_pkt, const uint8_t *blk_data,
+./mem/cache/cache.hh:    uint32_t handleSnoop(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/cache.hh:    M5_NODISCARD PacketPtr evictBlock(CacheBlk *blk) override;
+./mem/cache/cache.hh:    PacketPtr cleanEvictBlk(CacheBlk *blk);
+./mem/cache/cache.hh:    PacketPtr createMissPacket(PacketPtr cpu_pkt, CacheBlk *blk,
+./mem/cache/cache.hh:    bool isCachedAbove(PacketPtr pkt, bool is_timing = true);
+./mem/cache/write_queue_entry.cc:WriteQueueEntry::TargetList::add(PacketPtr pkt, Tick readyTime,
+./mem/cache/write_queue_entry.cc:WriteQueueEntry::TargetList::trySatisfyFunctional(PacketPtr pkt)
+./mem/cache/write_queue_entry.cc:WriteQueueEntry::allocate(Addr blk_addr, unsigned blk_size, PacketPtr target,
+./mem/cache/write_queue_entry.cc:WriteQueueEntry::trySatisfyFunctional(PacketPtr pkt)
+./mem/cache/base.hh:        virtual void recvTimingSnoopReq(PacketPtr pkt);
+./mem/cache/base.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./mem/cache/base.hh:        virtual Tick recvAtomicSnoop(PacketPtr pkt);
+./mem/cache/base.hh:        virtual void recvFunctionalSnoop(PacketPtr pkt);
+./mem/cache/base.hh:        virtual bool recvTimingSnoopResp(PacketPtr pkt) override;
+./mem/cache/base.hh:        virtual bool tryTiming(PacketPtr pkt) override;
+./mem/cache/base.hh:        virtual bool recvTimingReq(PacketPtr pkt) override;
+./mem/cache/base.hh:        virtual Tick recvAtomic(PacketPtr pkt) override;
+./mem/cache/base.hh:        virtual void recvFunctional(PacketPtr pkt) override;
+./mem/cache/base.hh:    ProbePointArg<PacketPtr> *ppHit;
+./mem/cache/base.hh:    ProbePointArg<PacketPtr> *ppMiss;
+./mem/cache/base.hh:    ProbePointArg<PacketPtr> *ppFill;
+./mem/cache/base.hh:    virtual bool access(PacketPtr pkt, CacheBlk *&blk, Cycles &lat,
+./mem/cache/base.hh:    virtual void handleTimingReqHit(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/base.hh:    virtual void handleTimingReqMiss(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/base.hh:    void handleTimingReqMiss(PacketPtr pkt, MSHR *mshr, CacheBlk *blk,
+./mem/cache/base.hh:    virtual void recvTimingReq(PacketPtr pkt);
+./mem/cache/base.hh:    void handleUncacheableWriteResp(PacketPtr pkt);
+./mem/cache/base.hh:    virtual void serviceMSHRTargets(MSHR *mshr, const PacketPtr pkt,
+./mem/cache/base.hh:    virtual void recvTimingResp(PacketPtr pkt);
+./mem/cache/base.hh:    virtual void recvTimingSnoopReq(PacketPtr pkt) = 0;
+./mem/cache/base.hh:    virtual void recvTimingSnoopResp(PacketPtr pkt) = 0;
+./mem/cache/base.hh:    virtual Cycles handleAtomicReqMiss(PacketPtr pkt, CacheBlk *&blk,
+./mem/cache/base.hh:    virtual Tick recvAtomic(PacketPtr pkt);
+./mem/cache/base.hh:    virtual Tick recvAtomicSnoop(PacketPtr pkt) = 0;
+./mem/cache/base.hh:    virtual void functionalAccess(PacketPtr pkt, bool from_cpu_side);
+./mem/cache/base.hh:    void cmpAndSwap(CacheBlk *blk, PacketPtr pkt);
+./mem/cache/base.hh:    virtual PacketPtr createMissPacket(PacketPtr cpu_pkt, CacheBlk *blk,
+./mem/cache/base.hh:    PacketPtr tempBlockWriteback;
+./mem/cache/base.hh:    virtual void satisfyRequest(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/base.hh:    CacheBlk *handleFill(PacketPtr pkt, CacheBlk *blk,
+./mem/cache/base.hh:    CacheBlk *allocateBlock(const PacketPtr pkt, PacketList &writebacks);
+./mem/cache/base.hh:    M5_NODISCARD virtual PacketPtr evictBlock(CacheBlk *blk) = 0;
+./mem/cache/base.hh:    PacketPtr writebackBlk(CacheBlk *blk);
+./mem/cache/base.hh:    PacketPtr writecleanBlk(CacheBlk *blk, Request::Flags dest, PacketId id);
+./mem/cache/base.hh:    MSHR *allocateMissBuffer(PacketPtr pkt, Tick time, bool sched_send = true)
+./mem/cache/base.hh:    void allocateWriteBuffer(PacketPtr pkt, Tick time)
+./mem/cache/base.hh:    void incMissCount(PacketPtr pkt)
+./mem/cache/base.hh:    void incHitCount(PacketPtr pkt)
+./mem/cache/write_queue_entry.hh:        const PacketPtr pkt;  //!< Pending request packet.
+./mem/cache/write_queue_entry.hh:        Target(PacketPtr _pkt, Tick _readyTime, Counter _order)
+./mem/cache/write_queue_entry.hh:        void add(PacketPtr pkt, Tick readyTime, Counter order);
+./mem/cache/write_queue_entry.hh:        bool trySatisfyFunctional(PacketPtr pkt);
+./mem/cache/write_queue_entry.hh:    void allocate(Addr blk_addr, unsigned blk_size, PacketPtr pkt,
+./mem/cache/write_queue_entry.hh:    bool trySatisfyFunctional(PacketPtr pkt);
+./mem/cache/write_queue.cc:WriteQueue::allocate(Addr blk_addr, unsigned blk_size, PacketPtr pkt,
+./mem/cache/prefetch/base.cc:BasePrefetcher::PrefetchInfo::PrefetchInfo(PacketPtr pkt, Addr addr, bool miss)
+./mem/cache/prefetch/base.cc:BasePrefetcher::PrefetchListener::notify(const PacketPtr &pkt)
+./mem/cache/prefetch/base.cc:BasePrefetcher::observeAccess(const PacketPtr &pkt, bool miss) const
+./mem/cache/prefetch/base.cc:BasePrefetcher::probeNotify(const PacketPtr &pkt, bool miss)
+./mem/cache/prefetch/bop.hh:        void notifyFill(const PacketPtr& pkt) override;
+./mem/cache/prefetch/sbooe.cc:SBOOEPrefetcher::notifyFill(const PacketPtr& pkt)
+./mem/cache/prefetch/sbooe.hh:        void notifyFill(const PacketPtr& pkt) override;
+./mem/cache/prefetch/queued.hh:        PacketPtr pkt;
+./mem/cache/prefetch/queued.hh:         * @param p PacketPtr with the memory request of the prefetch
+./mem/cache/prefetch/queued.hh:        DeferredPacket(PrefetchInfo const &pfi, Tick t, PacketPtr p,
+./mem/cache/prefetch/queued.hh:    void notify(const PacketPtr &pkt, const PrefetchInfo &pfi) override;
+./mem/cache/prefetch/queued.hh:    void insert(const PacketPtr &pkt, PrefetchInfo &new_pfi, int32_t priority);
+./mem/cache/prefetch/queued.hh:    PacketPtr getPacket() override;
+./mem/cache/prefetch/base.hh:    class PrefetchListener : public ProbeListenerArgBase<PacketPtr>
+./mem/cache/prefetch/base.hh:        void notify(const PacketPtr &pkt) override;
+./mem/cache/prefetch/base.hh:         * Constructs a PrefetchInfo using a PacketPtr.
+./mem/cache/prefetch/base.hh:         * @param pkt PacketPtr used to generate the PrefetchInfo
+./mem/cache/prefetch/base.hh:        PrefetchInfo(PacketPtr pkt, Addr addr, bool miss);
+./mem/cache/prefetch/base.hh:    bool observeAccess(const PacketPtr &pkt, bool miss) const;
+./mem/cache/prefetch/base.hh:    virtual void notify(const PacketPtr &pkt, const PrefetchInfo &pfi) = 0;
+./mem/cache/prefetch/base.hh:    virtual void notifyFill(const PacketPtr &pkt)
+./mem/cache/prefetch/base.hh:    virtual PacketPtr getPacket() = 0;
+./mem/cache/prefetch/base.hh:    void probeNotify(const PacketPtr &pkt, bool miss);
+./mem/cache/prefetch/bop.cc:BOPPrefetcher::notifyFill(const PacketPtr& pkt)
+./mem/cache/prefetch/queued.cc:QueuedPrefetcher::notify(const PacketPtr &pkt, const PrefetchInfo &pfi)
+./mem/cache/prefetch/queued.cc:PacketPtr
+./mem/cache/prefetch/queued.cc:    PacketPtr pkt = pfq.front().pkt;
+./mem/cache/prefetch/queued.cc:QueuedPrefetcher::insert(const PacketPtr &pkt, PrefetchInfo &new_pfi,
+./mem/cache/prefetch/queued.cc:    PacketPtr pf_pkt = new Packet(pf_req, MemCmd::HardPFReq);
+./mem/cache/mshr.hh:        const PacketPtr pkt;  //!< Pending request packet.
+./mem/cache/mshr.hh:        Target(PacketPtr _pkt, Tick _readyTime, Counter _order,
+./mem/cache/mshr.hh:        void updateFlags(PacketPtr pkt, Target::Source source,
+./mem/cache/mshr.hh:        void updateWriteFlags(PacketPtr pkt) {
+./mem/cache/mshr.hh:        void add(PacketPtr pkt, Tick readyTime, Counter order,
+./mem/cache/mshr.hh:        bool trySatisfyFunctional(PacketPtr pkt);
+./mem/cache/mshr.hh:        PacketPtr pkt = targets.front().pkt;
+./mem/cache/mshr.hh:    void allocate(Addr blk_addr, unsigned blk_size, PacketPtr pkt,
+./mem/cache/mshr.hh:    void allocateTarget(PacketPtr target, Tick when, Counter order,
+./mem/cache/mshr.hh:    bool handleSnoop(PacketPtr target, Counter order);
+./mem/cache/mshr.hh:    TargetList extractServiceableTargets(PacketPtr pkt);
+./mem/cache/mshr.hh:    bool trySatisfyFunctional(PacketPtr pkt);
+./mem/hmc_controller.cc:bool HMCController::recvTimingReq(PacketPtr pkt, PortID slave_port_id)
+./arch/x86/pagetable_walker.cc:Walker::WalkerPort::recvTimingResp(PacketPtr pkt)
+./arch/x86/pagetable_walker.cc:Walker::recvTimingResp(PacketPtr pkt)
+./arch/x86/pagetable_walker.cc:bool Walker::sendTiming(WalkerState* sendingState, PacketPtr pkt)
+./arch/x86/pagetable_walker.cc:            PacketPtr write = NULL;
+./arch/x86/pagetable_walker.cc:        PacketPtr write = NULL;
+./arch/x86/pagetable_walker.cc:Walker::WalkerState::stepWalk(PacketPtr &write)
+./arch/x86/pagetable_walker.cc:        PacketPtr oldRead = read;
+./arch/x86/pagetable_walker.cc:Walker::WalkerState::recvPacket(PacketPtr pkt)
+./arch/x86/pagetable_walker.cc:        PacketPtr write = NULL;
+./arch/x86/pagetable_walker.cc:        PacketPtr pkt = read;
+./arch/x86/pagetable_walker.cc:        PacketPtr write = writes.back();
+./arch/x86/memhelpers.hh:getMem(PacketPtr pkt, uint64_t &mem, unsigned dataSize,
+./arch/x86/memhelpers.hh:getPackedMem(PacketPtr pkt, std::array<uint64_t, N> &mem, unsigned dataSize)
+./arch/x86/memhelpers.hh:getMem(PacketPtr pkt, std::array<uint64_t, N> &mem, unsigned dataSize,
+./arch/x86/intmessage.hh:    static inline PacketPtr
+./arch/x86/intmessage.hh:        PacketPtr pkt = new Packet(req, MemCmd::MessageReq);
+./arch/x86/intmessage.hh:    PacketPtr
+./arch/x86/intmessage.hh:        PacketPtr pkt = prepIntRequest(id, offset, size);
+./arch/x86/intmessage.hh:    static inline PacketPtr
+./arch/x86/intmessage.hh:    static inline PacketPtr
+./arch/x86/interrupts.cc:X86ISA::Interrupts::read(PacketPtr pkt)
+./arch/x86/interrupts.cc:X86ISA::Interrupts::write(PacketPtr pkt)
+./arch/x86/interrupts.cc:X86ISA::Interrupts::recvMessage(PacketPtr pkt)
+./arch/x86/interrupts.cc:X86ISA::Interrupts::recvResponse(PacketPtr pkt)
+./arch/x86/interrupts.hh:    Tick read(PacketPtr pkt) override;
+./arch/x86/interrupts.hh:    Tick write(PacketPtr pkt) override;
+./arch/x86/interrupts.hh:    Tick recvMessage(PacketPtr pkt) override;
+./arch/x86/interrupts.hh:    Tick recvResponse(PacketPtr pkt) override;
+./arch/x86/pagetable_walker.hh:            bool recvTimingResp(PacketPtr pkt);
+./arch/x86/pagetable_walker.hh:            PacketPtr read;
+./arch/x86/pagetable_walker.hh:            std::vector<PacketPtr> writes;
+./arch/x86/pagetable_walker.hh:            bool recvPacket(PacketPtr pkt);
+./arch/x86/pagetable_walker.hh:            Fault stepWalk(PacketPtr &write);
+./arch/x86/pagetable_walker.hh:        bool recvTimingResp(PacketPtr pkt);
+./arch/x86/pagetable_walker.hh:        bool sendTiming(WalkerState * sendingState, PacketPtr pkt);
+./arch/x86/isa/microops/ldstop.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext * xc,
+./arch/x86/isa/microops/ldstop.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt,
+./arch/x86/isa/microops/ldstop.isa:        Fault completeAcc(PacketPtr, ExecContext *, Trace::InstRecord *) const;
+./arch/x86/isa/microops/ldstop.isa:        Fault completeAcc(PacketPtr, ExecContext *, Trace::InstRecord *) const;
+./arch/x86/isa/formats/monitor_mwait.isa:        Fault completeAcc(PacketPtr, ExecContext *, Trace::InstRecord *) const;
+./arch/x86/isa/formats/monitor_mwait.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/power/isa/formats/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/power/isa/formats/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt,
+./arch/power/isa/formats/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/mips/locked_mem.hh:handleLockedSnoop(XC *xc, PacketPtr pkt, Addr cacheBlockMask)
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/blockmem.isa:                Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/util.isa:        Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext * xc,
+./arch/sparc/isa/formats/mem/util.isa:        Fault %(class_name)s::completeAcc(PacketPtr, ExecContext * xc,
+./arch/sparc/isa/formats/mem/basicmem.isa:            Fault completeAcc(PacketPtr, ExecContext *,
+./arch/sparc/isa/formats/mem/swap.isa:        Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext * xc,
+./arch/sparc/insts/micro.hh:    completeAcc(PacketPtr, ExecContext *, Trace::InstRecord *) const override
+./arch/hsail/insts/mem.hh:                            PacketPtr pkt = new Packet(req, MemCmd::ReadReq);
+./arch/hsail/insts/mem.hh:                            PacketPtr pkt = new Packet(req, MemCmd::WriteReq);
+./arch/hsail/insts/mem.hh:                        PacketPtr pkt = new Packet(req, MemCmd::SwapReq);
+./arch/riscv/locked_mem.hh:handleLockedSnoop(XC *xc, PacketPtr pkt, Addr cacheBlockMask)
+./arch/riscv/isa/formats/amo.isa:            Fault completeAcc(PacketPtr, ExecContext *,
+./arch/riscv/isa/formats/amo.isa:            Fault completeAcc(PacketPtr, ExecContext *,
+./arch/riscv/isa/formats/amo.isa:    %(class_name)s::%(class_name)sMicro::completeAcc(PacketPtr pkt,
+./arch/riscv/isa/formats/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/riscv/isa/formats/mem.isa:    %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/riscv/isa/formats/mem.isa:    %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/riscv/insts/static_inst.hh:    completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/table_walker.cc:            PacketPtr  pkt = new Packet(req, MemCmd::ReadReq);
+./arch/arm/kvm/gic.cc:MuxingKvmGic::read(PacketPtr pkt)
+./arch/arm/kvm/gic.cc:MuxingKvmGic::write(PacketPtr pkt)
+./arch/arm/kvm/gic.hh:    Tick read(PacketPtr pkt) override;
+./arch/arm/kvm/gic.hh:    Tick write(PacketPtr pkt) override;
+./arch/arm/locked_mem.hh:handleLockedSnoop(XC *xc, PacketPtr pkt, Addr cacheBlockMask)
+./arch/arm/isa/templates/macromem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/macromem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/macromem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/macromem.isa:    Fault %(class_name)s<%(targs)s>::completeAcc(PacketPtr,
+./arch/arm/isa/templates/misc.isa:      Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/misc.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt,
+./arch/arm/isa/templates/mem64.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem64.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem64.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/neon64.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/neon64.isa:        PacketPtr pkt, ExecContext *xc, Trace::InstRecord *traceData) const
+./arch/arm/isa/templates/neon64.isa:        PacketPtr pkt, ExecContext *xc, Trace::InstRecord *traceData) const
+./arch/arm/isa/templates/branch.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:            PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:            PacketPtr pkt, ExecContext *xc, Trace::InstRecord *traceData) const
+./arch/arm/isa/templates/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/arm/isa/templates/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/generic/memhelpers.hh:getMem(PacketPtr pkt, MemT &mem, Trace::InstRecord *traceData)
+./arch/generic/locked_mem.hh:handleLockedSnoop(XC *xc, PacketPtr pkt, Addr cacheBlockMask)
+./arch/alpha/locked_mem.hh:handleLockedSnoop(XC *xc, PacketPtr pkt, Addr cacheBlockMask)
+./arch/alpha/isa/mem.isa:        Fault completeAcc(PacketPtr, ExecContext *,
+./arch/alpha/isa/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/alpha/isa/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/alpha/isa/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./arch/alpha/isa/mem.isa:    Fault %(class_name)s::completeAcc(PacketPtr pkt, ExecContext *xc,
+./learning_gem5/part2/simple_cache.cc:SimpleCache::CPUSidePort::sendPacket(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::CPUSidePort::recvFunctional(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::CPUSidePort::recvTimingReq(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:    PacketPtr pkt = blockedPacket;
+./learning_gem5/part2/simple_cache.cc:SimpleCache::MemSidePort::sendPacket(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::MemSidePort::recvTimingResp(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:    PacketPtr pkt = blockedPacket;
+./learning_gem5/part2/simple_cache.cc:SimpleCache::handleRequest(PacketPtr pkt, int port_id)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::handleResponse(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:void SimpleCache::sendResponse(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::handleFunctional(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::accessTiming(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:            PacketPtr new_pkt = new Packet(pkt->req, cmd, blockSize);
+./learning_gem5/part2/simple_cache.cc:SimpleCache::accessFunctional(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:SimpleCache::insert(PacketPtr pkt)
+./learning_gem5/part2/simple_cache.cc:        PacketPtr new_pkt = new Packet(req, MemCmd::WritebackDirty, blockSize);
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::CPUSidePort::sendPacket(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::CPUSidePort::recvFunctional(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::CPUSidePort::recvTimingReq(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:    PacketPtr pkt = blockedPacket;
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::MemSidePort::sendPacket(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::MemSidePort::recvTimingResp(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:    PacketPtr pkt = blockedPacket;
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::handleRequest(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::handleResponse(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.cc:SimpleMemobj::handleFunctional(PacketPtr pkt)
+./learning_gem5/part2/simple_memobj.hh:        PacketPtr blockedPacket;
+./learning_gem5/part2/simple_memobj.hh:        void sendPacket(PacketPtr pkt);
+./learning_gem5/part2/simple_memobj.hh:        Tick recvAtomic(PacketPtr pkt) override
+./learning_gem5/part2/simple_memobj.hh:        void recvFunctional(PacketPtr pkt) override;
+./learning_gem5/part2/simple_memobj.hh:        bool recvTimingReq(PacketPtr pkt) override;
+./learning_gem5/part2/simple_memobj.hh:        PacketPtr blockedPacket;
+./learning_gem5/part2/simple_memobj.hh:        void sendPacket(PacketPtr pkt);
+./learning_gem5/part2/simple_memobj.hh:        bool recvTimingResp(PacketPtr pkt) override;
+./learning_gem5/part2/simple_memobj.hh:    bool handleRequest(PacketPtr pkt);
+./learning_gem5/part2/simple_memobj.hh:    bool handleResponse(PacketPtr pkt);
+./learning_gem5/part2/simple_memobj.hh:    void handleFunctional(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:        PacketPtr blockedPacket;
+./learning_gem5/part2/simple_cache.hh:        void sendPacket(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:        Tick recvAtomic(PacketPtr pkt) override
+./learning_gem5/part2/simple_cache.hh:        void recvFunctional(PacketPtr pkt) override;
+./learning_gem5/part2/simple_cache.hh:        bool recvTimingReq(PacketPtr pkt) override;
+./learning_gem5/part2/simple_cache.hh:        PacketPtr blockedPacket;
+./learning_gem5/part2/simple_cache.hh:        void sendPacket(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:        bool recvTimingResp(PacketPtr pkt) override;
+./learning_gem5/part2/simple_cache.hh:    bool handleRequest(PacketPtr pkt, int port_id);
+./learning_gem5/part2/simple_cache.hh:    bool handleResponse(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    void sendResponse(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    void handleFunctional(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    void accessTiming(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    bool accessFunctional(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    void insert(PacketPtr pkt);
+./learning_gem5/part2/simple_cache.hh:    PacketPtr originalPacket;
+./base/inet.cc:hsplit(const EthPacketPtr &ptr)
+./base/inet.hh:    EthPacketPtr p;
+./base/inet.hh:    EthPtr(const EthPacketPtr &ptr) : p(ptr) { }
+./base/inet.hh:    const EthPtr &operator=(const EthPacketPtr &ptr) { p = ptr; return *this; }
+./base/inet.hh:    const EthPacketPtr packet() const { return p; }
+./base/inet.hh:    EthPacketPtr packet() { return p; }
+./base/inet.hh:    EthPacketPtr p;
+./base/inet.hh:    void set(const EthPacketPtr &ptr)
+./base/inet.hh:    IpPtr(const EthPacketPtr &ptr) : p(0), eth_hdr_vlan(false) { set(ptr); }
+./base/inet.hh:    const IpPtr &operator=(const EthPacketPtr &ptr) { set(ptr); return *this; }
+./base/inet.hh:    const EthPacketPtr packet() const { return p; }
+./base/inet.hh:    EthPacketPtr packet() { return p; }
+./base/inet.hh:    EthPacketPtr p;
+./base/inet.hh:    void set(const EthPacketPtr &ptr)
+./base/inet.hh:    Ip6Ptr(const EthPacketPtr &ptr) : p(0), eth_hdr_vlan(false) { set(ptr); }
+./base/inet.hh:    const Ip6Ptr &operator=(const EthPacketPtr &ptr)
+./base/inet.hh:    const EthPacketPtr packet() const { return p; }
+./base/inet.hh:    EthPacketPtr packet() { return p; }
+./base/inet.hh:    EthPacketPtr p;
+./base/inet.hh:    void set(const EthPacketPtr &ptr, int offset) { p = ptr; _off = offset; }
+./base/inet.hh:    const EthPacketPtr packet() const { return p; }
+./base/inet.hh:    EthPacketPtr packet() { return p; }
+./base/inet.hh:    EthPacketPtr p;
+./base/inet.hh:    void set(const EthPacketPtr &ptr, int offset) { p = ptr; _off = offset; }
+./base/inet.hh:    const EthPacketPtr packet() const { return p; }
+./base/inet.hh:    EthPacketPtr packet() { return p; }
+./base/inet.hh:int hsplit(const EthPacketPtr &ptr);
+./dev/x86/i8254.cc:X86ISA::I8254::read(PacketPtr pkt)
+./dev/x86/i8254.cc:X86ISA::I8254::write(PacketPtr pkt)
+./dev/x86/speaker.cc:X86ISA::Speaker::read(PacketPtr pkt)
+./dev/x86/speaker.cc:X86ISA::Speaker::write(PacketPtr pkt)
+./dev/x86/intdev.cc:        PacketPtr pkt = buildIntRequest(*apicIt, message);
+./dev/x86/speaker.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/speaker.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i8254.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/i8254.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i82094aa.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/i82094aa.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i82094aa.hh:    Tick recvResponse(PacketPtr pkt) override;
+./dev/x86/cmos.cc:X86ISA::Cmos::read(PacketPtr pkt)
+./dev/x86/cmos.cc:X86ISA::Cmos::write(PacketPtr pkt)
+./dev/x86/intdev.hh:        Tick recvMessage(PacketPtr pkt)
+./dev/x86/intdev.hh:        Tick recvResponse(PacketPtr pkt)
+./dev/x86/intdev.hh:    recvMessage(PacketPtr pkt)
+./dev/x86/intdev.hh:    recvResponse(PacketPtr pkt)
+./dev/x86/i8259.cc:X86ISA::I8259::read(PacketPtr pkt)
+./dev/x86/i8259.cc:X86ISA::I8259::write(PacketPtr pkt)
+./dev/x86/i82094aa.cc:X86ISA::I82094AA::recvResponse(PacketPtr pkt)
+./dev/x86/i82094aa.cc:X86ISA::I82094AA::read(PacketPtr pkt)
+./dev/x86/i82094aa.cc:X86ISA::I82094AA::write(PacketPtr pkt)
+./dev/x86/i8237.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/i8237.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i8042.cc:X86ISA::I8042::read(PacketPtr pkt)
+./dev/x86/i8042.cc:X86ISA::I8042::write(PacketPtr pkt)
+./dev/x86/i8259.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/i8259.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i8237.cc:X86ISA::I8237::read(PacketPtr pkt)
+./dev/x86/i8237.cc:X86ISA::I8237::write(PacketPtr pkt)
+./dev/x86/cmos.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/cmos.hh:    Tick write(PacketPtr pkt) override;
+./dev/x86/i8042.hh:    Tick read(PacketPtr pkt) override;
+./dev/x86/i8042.hh:    Tick write(PacketPtr pkt) override;
+./dev/net/i8254xGBe.hh:    EthPacketPtr txPacket;
+./dev/net/i8254xGBe.hh:        EthPacketPtr pktPtr;
+./dev/net/i8254xGBe.hh:        int writePacket(EthPacketPtr packet, int pkt_offset);
+./dev/net/i8254xGBe.hh:        unsigned getPacketSize(EthPacketPtr p);
+./dev/net/i8254xGBe.hh:        void getPacketData(EthPacketPtr p);
+./dev/net/i8254xGBe.hh:    Tick read(PacketPtr pkt) override;
+./dev/net/i8254xGBe.hh:    Tick write(PacketPtr pkt) override;
+./dev/net/i8254xGBe.hh:    Tick writeConfig(PacketPtr pkt) override;
+./dev/net/i8254xGBe.hh:    bool ethRxPkt(EthPacketPtr packet);
+./dev/net/i8254xGBe.hh:    virtual bool recvPacket(EthPacketPtr pkt) { return dev->ethRxPkt(pkt); }
+./dev/net/pktfifo.cc:        EthPacketPtr &pkt = i->packet;
+./dev/net/etherbus.hh:    EthPacketPtr packet;
+./dev/net/etherbus.hh:    bool send(EtherInt *sender, EthPacketPtr &packet);
+./dev/net/etherpkt.hh:typedef std::shared_ptr<EthPacketData> EthPacketPtr;
+./dev/net/etherint.hh:    bool sendPacket(EthPacketPtr packet)
+./dev/net/etherint.hh:    virtual bool recvPacket(EthPacketPtr packet) = 0;
+./dev/net/ns_gige.cc:NSGigE::writeConfig(PacketPtr pkt)
+./dev/net/ns_gige.cc:NSGigE::read(PacketPtr pkt)
+./dev/net/ns_gige.cc:NSGigE::write(PacketPtr pkt)
+./dev/net/ns_gige.cc:NSGigE::rxFilter(const EthPacketPtr &packet)
+./dev/net/ns_gige.cc:NSGigE::recvPacket(EthPacketPtr packet)
+./dev/net/tcp_iface.hh:                    const EthPacketPtr &packet) override;
+./dev/net/tcp_iface.hh:    void recvPacket(const Header &header, EthPacketPtr &packet) override;
+./dev/net/dist_etherlink.hh:        EthPacketPtr packet;
+./dev/net/dist_etherlink.hh:        bool transmit(EthPacketPtr packet);
+./dev/net/dist_etherlink.hh:        bool recvPacket(EthPacketPtr pkt) { return txLink->transmit(pkt); }
+./dev/net/etherdump.cc:EtherDump::dumpPacket(EthPacketPtr &packet)
+./dev/net/i8254xGBe.cc:IGbE::writeConfig(PacketPtr pkt)
+./dev/net/i8254xGBe.cc:IGbE::read(PacketPtr pkt)
+./dev/net/i8254xGBe.cc:IGbE::write(PacketPtr pkt)
+./dev/net/i8254xGBe.cc:IGbE::RxDescCache::writePacket(EthPacketPtr packet, int pkt_offset)
+./dev/net/i8254xGBe.cc:IGbE::TxDescCache::getPacketSize(EthPacketPtr p)
+./dev/net/i8254xGBe.cc:IGbE::TxDescCache::getPacketData(EthPacketPtr p)
+./dev/net/i8254xGBe.cc:IGbE::ethRxPkt(EthPacketPtr pkt)
+./dev/net/i8254xGBe.cc:    EthPacketPtr pkt;
+./dev/net/tcp_iface.cc:TCPIface::sendPacket(const Header &header, const EthPacketPtr &packet)
+./dev/net/tcp_iface.cc:TCPIface::recvPacket(const Header &header, EthPacketPtr &packet)
+./dev/net/etherswitch.hh:        bool recvPacket(EthPacketPtr packet);
+./dev/net/etherswitch.hh:        void enqueue(EthPacketPtr packet, unsigned senderId);
+./dev/net/etherswitch.hh:            PortFifoEntry(EthPacketPtr pkt, Tick recv_tick, unsigned id)
+./dev/net/etherswitch.hh:            EthPacketPtr packet;
+./dev/net/etherswitch.hh:            EthPacketPtr front() { return fifo.begin()->packet; }
+./dev/net/etherswitch.hh:            bool push(EthPacketPtr ptr, unsigned senderId);
+./dev/net/dist_iface.hh:            EthPacketPtr packet;
+./dev/net/dist_iface.hh:            Desc(EthPacketPtr p, Tick s, Tick d) :
+./dev/net/dist_iface.hh:        EthPacketPtr popPacket();
+./dev/net/dist_iface.hh:        void pushPacket(EthPacketPtr new_packet,
+./dev/net/dist_iface.hh:    virtual void sendPacket(const Header &header, const EthPacketPtr &packet) = 0;
+./dev/net/dist_iface.hh:    virtual void recvPacket(const Header &header, EthPacketPtr &packet) = 0;
+./dev/net/dist_iface.hh:    void packetOut(EthPacketPtr pkt, Tick send_delay);
+./dev/net/dist_iface.hh:    EthPacketPtr packetIn() { return recvScheduler.popPacket(); }
+./dev/net/etherswitch.cc:EtherSwitch::Interface::PortFifo::push(EthPacketPtr ptr, unsigned senderId)
+./dev/net/etherswitch.cc:EtherSwitch::Interface::recvPacket(EthPacketPtr packet)
+./dev/net/etherswitch.cc:EtherSwitch::Interface::enqueue(EthPacketPtr packet, unsigned senderId)
+./dev/net/ethertap.hh:    bool recvSimulated(EthPacketPtr packet);
+./dev/net/ethertap.hh:    std::queue<EthPacketPtr> packetBuffer;
+./dev/net/ethertap.hh:    bool recvPacket(EthPacketPtr pkt) override
+./dev/net/dist_iface.cc:DistIface::RecvScheduler::pushPacket(EthPacketPtr new_packet,
+./dev/net/dist_iface.cc:EthPacketPtr
+./dev/net/dist_iface.cc:    EthPacketPtr next_packet = descQueue.front().packet;
+./dev/net/dist_iface.cc:DistIface::packetOut(EthPacketPtr pkt, Tick send_delay)
+./dev/net/dist_iface.cc:    EthPacketPtr new_packet;
+./dev/net/etherlink.hh:        EthPacketPtr packet;
+./dev/net/etherlink.hh:        std::deque<std::pair<Tick, EthPacketPtr>> txQueue;
+./dev/net/etherlink.hh:        void txComplete(EthPacketPtr packet);
+./dev/net/etherlink.hh:        bool transmit(EthPacketPtr packet);
+./dev/net/etherlink.hh:        bool recvPacket(EthPacketPtr packet) { return txlink->transmit(packet); }
+./dev/net/ethertap.cc:EtherTapBase::recvSimulated(EthPacketPtr packet)
+./dev/net/ethertap.cc:    EthPacketPtr packet;
+./dev/net/ethertap.cc:    EthPacketPtr packet = packetBuffer.front();
+./dev/net/dist_etherlink.cc:DistEtherLink::TxLink::transmit(EthPacketPtr pkt)
+./dev/net/etherlink.cc:EtherLink::Link::txComplete(EthPacketPtr packet)
+./dev/net/etherlink.cc:EtherLink::Link::transmit(EthPacketPtr pkt)
+./dev/net/etherlink.cc:            EthPacketPtr delayed_packet = make_shared<EthPacketData>();
+./dev/net/sinic.cc:Device::read(PacketPtr pkt)
+./dev/net/sinic.cc:Device::write(PacketPtr pkt)
+./dev/net/sinic.cc:    EthPacketPtr packet = txFifo.front();
+./dev/net/sinic.cc:Device::rxFilter(const EthPacketPtr &packet)
+./dev/net/sinic.cc:Device::recvPacket(EthPacketPtr packet)
+./dev/net/etherdump.hh:    void dumpPacket(EthPacketPtr &packet);
+./dev/net/etherdump.hh:    inline void dump(EthPacketPtr &pkt) { dumpPacket(pkt); }
+./dev/net/sinic.hh:    EthPacketPtr txPacket;
+./dev/net/sinic.hh:    bool rxFilter(const EthPacketPtr &packet);
+./dev/net/sinic.hh:    bool recvPacket(EthPacketPtr packet);
+./dev/net/sinic.hh:    Tick read(PacketPtr pkt) override;
+./dev/net/sinic.hh:    Tick write(PacketPtr pkt) override;
+./dev/net/sinic.hh:    virtual bool recvPacket(EthPacketPtr pkt) { return dev->recvPacket(pkt); }
+./dev/net/ns_gige.hh:    EthPacketPtr txPacket;
+./dev/net/ns_gige.hh:    EthPacketPtr rxPacket;
+./dev/net/ns_gige.hh:    bool rxFilter(const EthPacketPtr &packet);
+./dev/net/ns_gige.hh:    Tick writeConfig(PacketPtr pkt) override;
+./dev/net/ns_gige.hh:    Tick read(PacketPtr pkt) override;
+./dev/net/ns_gige.hh:    Tick write(PacketPtr pkt) override;
+./dev/net/ns_gige.hh:    bool recvPacket(EthPacketPtr packet);
+./dev/net/ns_gige.hh:    virtual bool recvPacket(EthPacketPtr pkt) { return dev->recvPacket(pkt); }
+./dev/net/pktfifo.hh:    EthPacketPtr packet;
+./dev/net/pktfifo.hh:    PacketFifoEntry(EthPacketPtr p, uint64_t n)
+./dev/net/pktfifo.hh:    EthPacketPtr front() { return fifo.begin()->packet; }
+./dev/net/pktfifo.hh:    bool push(EthPacketPtr ptr)
+./dev/net/etherbus.cc:EtherBus::send(EtherInt *sndr, EthPacketPtr &pkt)
+./dev/mips/malta_cchip.cc:MaltaCChip::read(PacketPtr pkt)
+./dev/mips/malta_cchip.cc:MaltaCChip::write(PacketPtr pkt)
+./dev/mips/malta_io.cc:MaltaIO::read(PacketPtr pkt)
+./dev/mips/malta_io.cc:MaltaIO::write(PacketPtr pkt)
+./dev/mips/malta_io.hh:    Tick read(PacketPtr pkt) override;
+./dev/mips/malta_io.hh:    Tick write(PacketPtr pkt) override;
+./dev/mips/malta_cchip.hh:    Tick read(PacketPtr pkt) override;
+./dev/mips/malta_cchip.hh:    Tick write(PacketPtr pkt) override;
+./dev/sparc/mm_disk.cc:MmDisk::read(PacketPtr pkt)
+./dev/sparc/mm_disk.cc:MmDisk::write(PacketPtr pkt)
+./dev/sparc/iob.hh:    void writeIob(PacketPtr pkt);
+./dev/sparc/iob.hh:    void writeJBus(PacketPtr pkt);
+./dev/sparc/iob.hh:    void readIob(PacketPtr pkt);
+./dev/sparc/iob.hh:    void readJBus(PacketPtr pkt);
+./dev/sparc/iob.hh:    Tick read(PacketPtr pkt) override;
+./dev/sparc/iob.hh:    Tick write(PacketPtr pkt) override;
+./dev/sparc/iob.cc:Iob::read(PacketPtr pkt)
+./dev/sparc/iob.cc:Iob::readIob(PacketPtr pkt)
+./dev/sparc/iob.cc:Iob::readJBus(PacketPtr pkt)
+./dev/sparc/iob.cc:Iob::write(PacketPtr pkt)
+./dev/sparc/iob.cc:Iob::writeIob(PacketPtr pkt)
+./dev/sparc/iob.cc:Iob::writeJBus(PacketPtr pkt)
+./dev/sparc/dtod.hh:    Tick read(PacketPtr pkt) override;
+./dev/sparc/dtod.hh:    Tick write(PacketPtr pkt) override;
+./dev/sparc/dtod.cc:DumbTOD::read(PacketPtr pkt)
+./dev/sparc/dtod.cc:DumbTOD::write(PacketPtr pkt)
+./dev/sparc/mm_disk.hh:    Tick read(PacketPtr pkt) override;
+./dev/sparc/mm_disk.hh:    Tick write(PacketPtr pkt) override;
+./dev/dma_device.cc:DmaPort::handleResp(PacketPtr pkt, Tick delay)
+./dev/dma_device.cc:DmaPort::recvTimingResp(PacketPtr pkt)
+./dev/dma_device.cc:        PacketPtr pkt = new Packet(req, cmd);
+./dev/dma_device.cc:DmaPort::queueDma(PacketPtr pkt)
+./dev/dma_device.cc:    PacketPtr pkt = transmitList.front();
+./dev/dma_device.cc:            PacketPtr pkt = transmitList.front();
+./dev/i2c/bus.cc:I2CBus::read(PacketPtr pkt)
+./dev/i2c/bus.cc:I2CBus::write(PacketPtr pkt)
+./dev/i2c/bus.cc:I2CBus::updateSignals(PacketPtr pkt)
+./dev/i2c/bus.cc:I2CBus::isClockSet(PacketPtr pkt) const
+./dev/i2c/bus.cc:I2CBus::isStart(PacketPtr pkt) const
+./dev/i2c/bus.cc:I2CBus::isEnd(PacketPtr pkt) const
+./dev/i2c/bus.hh:    void updateSignals(PacketPtr pkt);
+./dev/i2c/bus.hh:    bool isClockSet(PacketPtr pkt) const;
+./dev/i2c/bus.hh:    bool isStart(PacketPtr pkt) const;
+./dev/i2c/bus.hh:    bool isEnd(PacketPtr pkt) const;
+./dev/i2c/bus.hh:    Tick read(PacketPtr pkt) override;
+./dev/i2c/bus.hh:    Tick write(PacketPtr pkt) override;
+./dev/pci/copy_engine.cc:CopyEngine::read(PacketPtr pkt)
+./dev/pci/copy_engine.cc:CopyEngine::write(PacketPtr pkt)
+./dev/pci/copy_engine.hh:        virtual Tick read(PacketPtr pkt)
+./dev/pci/copy_engine.hh:        virtual Tick write(PacketPtr pkt)
+./dev/pci/copy_engine.hh:        void channelRead(PacketPtr pkt, Addr daddr, int size);
+./dev/pci/copy_engine.hh:        void channelWrite(PacketPtr pkt, Addr daddr, int size);
+./dev/pci/copy_engine.hh:    Tick read(PacketPtr pkt) override;
+./dev/pci/copy_engine.hh:    Tick write(PacketPtr pkt) override;
+./dev/pci/host.cc:GenericPciHost::read(PacketPtr pkt)
+./dev/pci/host.cc:GenericPciHost::write(PacketPtr pkt)
+./dev/pci/host.hh:    Tick read(PacketPtr pkt) override;
+./dev/pci/host.hh:    Tick write(PacketPtr pkt) override;
+./dev/pci/device.cc:PciDevice::readConfig(PacketPtr pkt)
+./dev/pci/device.cc:PciDevice::writeConfig(PacketPtr pkt)
+./dev/pci/device.hh:    virtual Tick writeConfig(PacketPtr pkt);
+./dev/pci/device.hh:    virtual Tick readConfig(PacketPtr pkt);
+./dev/serial/simple.hh:    Tick read(PacketPtr pkt) override;
+./dev/serial/simple.hh:    Tick write(PacketPtr pkt) override;
+./dev/serial/uart8250.cc:Uart8250::read(PacketPtr pkt)
+./dev/serial/uart8250.cc:Uart8250::write(PacketPtr pkt)
+./dev/serial/simple.cc:SimpleUart::read(PacketPtr pkt)
+./dev/serial/simple.cc:SimpleUart::write(PacketPtr pkt)
+./dev/serial/uart8250.hh:    Tick read(PacketPtr pkt) override;
+./dev/serial/uart8250.hh:    Tick write(PacketPtr pkt) override;
+./dev/baddev.cc:BadDevice::read(PacketPtr pkt)
+./dev/baddev.cc:BadDevice::write(PacketPtr pkt)
+./dev/dma_device.hh:    void handleResp(PacketPtr pkt, Tick delay = 0);
+./dev/dma_device.hh:    std::deque<PacketPtr> transmitList;
+./dev/dma_device.hh:    bool recvTimingResp(PacketPtr pkt) override;
+./dev/dma_device.hh:    void queueDma(PacketPtr pkt);
+./dev/storage/ide_ctrl.cc:IdeController::readConfig(PacketPtr pkt)
+./dev/storage/ide_ctrl.cc:IdeController::writeConfig(PacketPtr pkt)
+./dev/storage/ide_ctrl.cc:IdeController::dispatchAccess(PacketPtr pkt, bool read)
+./dev/storage/ide_ctrl.cc:IdeController::read(PacketPtr pkt)
+./dev/storage/ide_ctrl.cc:IdeController::write(PacketPtr pkt)
+./dev/storage/ide_ctrl.hh:    void dispatchAccess(PacketPtr pkt, bool read);
+./dev/storage/ide_ctrl.hh:    Tick writeConfig(PacketPtr pkt) override;
+./dev/storage/ide_ctrl.hh:    Tick readConfig(PacketPtr pkt) override;
+./dev/storage/ide_ctrl.hh:    Tick read(PacketPtr pkt) override;
+./dev/storage/ide_ctrl.hh:    Tick write(PacketPtr pkt) override;
+./dev/io_device.hh:    virtual Tick recvAtomic(PacketPtr pkt);
+./dev/io_device.hh:    virtual Tick read(PacketPtr pkt) = 0;
+./dev/io_device.hh:    virtual Tick write(PacketPtr pkt) = 0;
+./dev/isa_fake.hh:    virtual Tick read(PacketPtr pkt);
+./dev/isa_fake.hh:    virtual Tick write(PacketPtr pkt);
+./dev/arm/amba_device.hh:    bool readId(PacketPtr pkt, uint64_t amba_id, Addr pio_addr);
+./dev/arm/gic_v3.cc:Gicv3::read(PacketPtr pkt)
+./dev/arm/gic_v3.cc:Gicv3::write(PacketPtr pkt)
+./dev/arm/energy_ctrl.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/energy_ctrl.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/vgic.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/vgic.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/vgic.hh:    Tick readVCpu(PacketPtr pkt);
+./dev/arm/vgic.hh:    Tick readCtrl(PacketPtr pkt);
+./dev/arm/vgic.hh:    Tick writeVCpu(PacketPtr pkt);
+./dev/arm/vgic.hh:    Tick writeCtrl(PacketPtr pkt);
+./dev/arm/vgic.cc:VGic::read(PacketPtr pkt)
+./dev/arm/vgic.cc:VGic::write(PacketPtr pkt)
+./dev/arm/vgic.cc:VGic::readVCpu(PacketPtr pkt)
+./dev/arm/vgic.cc:VGic::readCtrl(PacketPtr pkt)
+./dev/arm/vgic.cc:VGic::writeVCpu(PacketPtr pkt)
+./dev/arm/vgic.cc:VGic::writeCtrl(PacketPtr pkt)
+./dev/arm/amba_fake.cc:AmbaFake::read(PacketPtr pkt)
+./dev/arm/amba_fake.cc:AmbaFake::write(PacketPtr pkt)
+./dev/arm/rv_ctrl.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/rv_ctrl.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/hdlcd.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/hdlcd.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/gic_v2.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/gic_v2.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/gic_v2.hh:    Tick readDistributor(PacketPtr pkt);
+./dev/arm/gic_v2.hh:    Tick readCpu(PacketPtr pkt);
+./dev/arm/gic_v2.hh:    Tick writeDistributor(PacketPtr pkt);
+./dev/arm/gic_v2.hh:    Tick writeCpu(PacketPtr pkt);
+./dev/arm/timer_a9global.hh:        void read(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_a9global.hh:        void write(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_a9global.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/timer_a9global.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/timer_cpulocal.cc:CpuLocalTimer::read(PacketPtr pkt)
+./dev/arm/timer_cpulocal.cc:CpuLocalTimer::Timer::read(PacketPtr pkt, Addr daddr)
+./dev/arm/timer_cpulocal.cc:CpuLocalTimer::write(PacketPtr pkt)
+./dev/arm/timer_cpulocal.cc:CpuLocalTimer::Timer::write(PacketPtr pkt, Addr daddr)
+./dev/arm/timer_cpulocal.hh:        void read(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_cpulocal.hh:        void write(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_cpulocal.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/timer_cpulocal.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/rv_ctrl.cc:RealViewCtrl::read(PacketPtr pkt)
+./dev/arm/rv_ctrl.cc:RealViewCtrl::write(PacketPtr pkt)
+./dev/arm/pl111.cc:Pl111::read(PacketPtr pkt)
+./dev/arm/pl111.cc:Pl111::write(PacketPtr pkt)
+./dev/arm/pl111.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/pl111.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/gpu_nomali.cc:NoMaliGpu::read(PacketPtr pkt)
+./dev/arm/gpu_nomali.cc:NoMaliGpu::write(PacketPtr pkt)
+./dev/arm/rtc_pl031.cc:PL031::read(PacketPtr pkt)
+./dev/arm/rtc_pl031.cc:PL031::write(PacketPtr pkt)
+./dev/arm/gic_v2m.cc:Gicv2m::read(PacketPtr pkt)
+./dev/arm/gic_v2m.cc:Gicv2m::write(PacketPtr pkt)
+./dev/arm/a9scu.hh:    virtual Tick read(PacketPtr pkt);
+./dev/arm/a9scu.hh:    virtual Tick write(PacketPtr pkt);
+./dev/arm/timer_a9global.cc:A9GlobalTimer::read(PacketPtr pkt)
+./dev/arm/timer_a9global.cc:A9GlobalTimer::Timer::read(PacketPtr pkt, Addr daddr)
+./dev/arm/timer_a9global.cc:A9GlobalTimer::write(PacketPtr pkt)
+./dev/arm/timer_a9global.cc:A9GlobalTimer::Timer::write(PacketPtr pkt, Addr daddr)
+./dev/arm/pl011.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/pl011.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/amba_device.cc:AmbaDevice::readId(PacketPtr pkt, uint64_t amba_id, Addr pio_addr)
+./dev/arm/kmi.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/kmi.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/gic_v3.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/gic_v3.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/generic_timer.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/generic_timer.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/rtc_pl031.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/rtc_pl031.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/gic_v2m.hh:    virtual Tick read(PacketPtr pkt);
+./dev/arm/gic_v2m.hh:    virtual Tick write(PacketPtr pkt);
+./dev/arm/vio_mmio.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/vio_mmio.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/generic_timer.cc:GenericTimerMem::read(PacketPtr pkt)
+./dev/arm/generic_timer.cc:GenericTimerMem::write(PacketPtr pkt)
+./dev/arm/timer_sp804.cc:Sp804::read(PacketPtr pkt)
+./dev/arm/timer_sp804.cc:Sp804::Timer::read(PacketPtr pkt, Addr daddr)
+./dev/arm/timer_sp804.cc:Sp804::write(PacketPtr pkt)
+./dev/arm/timer_sp804.cc:Sp804::Timer::write(PacketPtr pkt, Addr daddr)
+./dev/arm/energy_ctrl.cc:EnergyCtrl::read(PacketPtr pkt)
+./dev/arm/energy_ctrl.cc:EnergyCtrl::write(PacketPtr pkt)
+./dev/arm/vio_mmio.cc:MmioVirtIO::read(PacketPtr pkt)
+./dev/arm/vio_mmio.cc:MmioVirtIO::write(PacketPtr pkt)
+./dev/arm/ufs_device.cc:UFSHostDevice::read(PacketPtr pkt)
+./dev/arm/ufs_device.cc:UFSHostDevice::write(PacketPtr pkt)
+./dev/arm/ufs_device.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/ufs_device.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/pl011.cc:Pl011::read(PacketPtr pkt)
+./dev/arm/pl011.cc:Pl011::write(PacketPtr pkt)
+./dev/arm/kmi.cc:Pl050::read(PacketPtr pkt)
+./dev/arm/kmi.cc:Pl050::write(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::read(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::write(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::readDistributor(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::readCpu(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::writeDistributor(PacketPtr pkt)
+./dev/arm/gic_v2.cc:GicV2::writeCpu(PacketPtr pkt)
+./dev/arm/a9scu.cc:A9SCU::read(PacketPtr pkt)
+./dev/arm/a9scu.cc:A9SCU::write(PacketPtr pkt)
+./dev/arm/timer_sp804.hh:        void read(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_sp804.hh:        void write(PacketPtr pkt, Addr daddr);
+./dev/arm/timer_sp804.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/timer_sp804.hh:    Tick write(PacketPtr pkt) override;
+./dev/arm/amba_fake.hh:    virtual Tick read(PacketPtr pkt);
+./dev/arm/amba_fake.hh:    virtual Tick write(PacketPtr pkt);
+./dev/arm/hdlcd.cc:HDLcd::read(PacketPtr pkt)
+./dev/arm/hdlcd.cc:HDLcd::write(PacketPtr pkt)
+./dev/arm/gpu_nomali.hh:    Tick read(PacketPtr pkt) override;
+./dev/arm/gpu_nomali.hh:    Tick write(PacketPtr pkt) override;
+./dev/virtio/base.cc:VirtIODeviceBase::readConfig(PacketPtr pkt, Addr cfgOffset)
+./dev/virtio/base.cc:VirtIODeviceBase::writeConfig(PacketPtr pkt, Addr cfgOffset)
+./dev/virtio/base.cc:VirtIODeviceBase::readConfigBlob(PacketPtr pkt, Addr cfgOffset, const uint8_t *cfg)
+./dev/virtio/base.cc:VirtIODeviceBase::writeConfigBlob(PacketPtr pkt, Addr cfgOffset, uint8_t *cfg)
+./dev/virtio/fs9p.cc:VirtIO9PBase::readConfig(PacketPtr pkt, Addr cfgOffset)
+./dev/virtio/pci.cc:PciVirtIO::read(PacketPtr pkt)
+./dev/virtio/pci.cc:PciVirtIO::write(PacketPtr pkt)
+./dev/virtio/console.hh:    void readConfig(PacketPtr pkt, Addr cfgOffset);
+./dev/virtio/fs9p.hh:    void readConfig(PacketPtr pkt, Addr cfgOffset);
+./dev/virtio/block.hh:    void readConfig(PacketPtr pkt, Addr cfgOffset);
+./dev/virtio/pci.hh:    Tick read(PacketPtr pkt);
+./dev/virtio/pci.hh:    Tick write(PacketPtr pkt);
+./dev/virtio/block.cc:VirtIOBlock::readConfig(PacketPtr pkt, Addr cfgOffset)
+./dev/virtio/base.hh:    virtual void readConfig(PacketPtr pkt, Addr cfgOffset);
+./dev/virtio/base.hh:    virtual void writeConfig(PacketPtr pkt, Addr cfgOffset);
+./dev/virtio/base.hh:    void readConfigBlob(PacketPtr pkt, Addr cfgOffset, const uint8_t *cfg);
+./dev/virtio/base.hh:    void writeConfigBlob(PacketPtr pkt, Addr cfgOffset, uint8_t *cfg);
+./dev/virtio/console.cc:VirtIOConsole::readConfig(PacketPtr pkt, Addr cfgOffset)
+./dev/io_device.cc:PioPort::recvAtomic(PacketPtr pkt)
+./dev/isa_fake.cc:IsaFake::read(PacketPtr pkt)
+./dev/isa_fake.cc:IsaFake::write(PacketPtr pkt)
+./dev/baddev.hh:    virtual Tick read(PacketPtr pkt);
+./dev/baddev.hh:    virtual Tick write(PacketPtr pkt);
+./dev/alpha/tsunami_cchip.hh:    Tick read(PacketPtr pkt) override;
+./dev/alpha/tsunami_cchip.hh:    Tick write(PacketPtr pkt) override;
+./dev/alpha/tsunami_io.cc:TsunamiIO::read(PacketPtr pkt)
+./dev/alpha/tsunami_io.cc:TsunamiIO::write(PacketPtr pkt)
+./dev/alpha/tsunami_pchip.cc:TsunamiPChip::read(PacketPtr pkt)
+./dev/alpha/tsunami_pchip.cc:TsunamiPChip::write(PacketPtr pkt)
+./dev/alpha/tsunami_io.hh:    Tick read(PacketPtr pkt) override;
+./dev/alpha/tsunami_io.hh:    Tick write(PacketPtr pkt) override;
+./dev/alpha/tsunami_pchip.hh:    Tick read(PacketPtr pkt) override;
+./dev/alpha/tsunami_pchip.hh:    Tick write(PacketPtr pkt) override;
+./dev/alpha/tsunami_cchip.cc:TsunamiCChip::read(PacketPtr pkt)
+./dev/alpha/tsunami_cchip.cc:TsunamiCChip::write(PacketPtr pkt)
+./dev/alpha/backdoor.hh:    Tick read(PacketPtr pkt) override;
+./dev/alpha/backdoor.hh:    Tick write(PacketPtr pkt) override;
+./dev/alpha/backdoor.cc:AlphaBackdoor::read(PacketPtr pkt)
+./dev/alpha/backdoor.cc:AlphaBackdoor::write(PacketPtr pkt)
+./gpu-compute/lds_state.cc:LdsState::countBankConflicts(PacketPtr packet, unsigned *bankAccesses)
+./gpu-compute/lds_state.cc:LdsState::CuSidePort::recvTimingReq(PacketPtr packet)
+./gpu-compute/lds_state.cc:LdsState::getDynInstr(PacketPtr packet)
+./gpu-compute/lds_state.cc:LdsState::processPacket(PacketPtr packet)
+./gpu-compute/lds_state.cc:LdsState::returnQueuePush(std::pair<Tick, PacketPtr> thePair)
+./gpu-compute/lds_state.cc:LdsState::CuSidePort::recvFunctional(PacketPtr pkt)
+./gpu-compute/lds_state.cc:        PacketPtr packet = returnQueue.front().second;
+./gpu-compute/gpu_tlb.cc:    GpuTLB::issueTLBLookup(PacketPtr pkt)
+./gpu-compute/gpu_tlb.cc:                               PacketPtr _pkt)
+./gpu-compute/gpu_tlb.cc:    GpuTLB::pagingProtectionChecks(ThreadContext *tc, PacketPtr pkt,
+./gpu-compute/gpu_tlb.cc:            PacketPtr pkt)
+./gpu-compute/gpu_tlb.cc:                              PacketPtr pkt)
+./gpu-compute/gpu_tlb.cc:    GpuTLB::CpuSidePort::recvTimingReq(PacketPtr pkt)
+./gpu-compute/gpu_tlb.cc:    GpuTLB::handleFuncTranslationReturn(PacketPtr pkt, tlbOutcome tlb_outcome)
+./gpu-compute/gpu_tlb.cc:    GpuTLB::CpuSidePort::recvFunctional(PacketPtr pkt)
+./gpu-compute/gpu_tlb.cc:    GpuTLB::MemSidePort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/fetch_stage.cc:FetchStage::processFetchReturn(PacketPtr pkt)
+./gpu-compute/fetch_stage.cc:FetchStage::fetch(PacketPtr pkt, Wavefront *wavefront)
+./gpu-compute/fetch_stage.hh:    void processFetchReturn(PacketPtr pkt);
+./gpu-compute/fetch_stage.hh:    void fetch(PacketPtr pkt, Wavefront *wave);
+./gpu-compute/compute_unit.cc:ComputeUnit::DataPort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:        PacketPtr pkt = retries.front().first;
+./gpu-compute/compute_unit.cc:ComputeUnit::SQCPort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:        PacketPtr pkt = retries.front().first;
+./gpu-compute/compute_unit.cc:ComputeUnit::sendRequest(GPUDynInstPtr gpuDynInst, int index, PacketPtr pkt)
+./gpu-compute/compute_unit.cc:            PacketPtr oldPkt = pkt;
+./gpu-compute/compute_unit.cc:        PacketPtr new_pkt = new Packet(pkt->req, pkt->cmd);
+./gpu-compute/compute_unit.cc:ComputeUnit::sendSyncRequest(GPUDynInstPtr gpuDynInst, int index, PacketPtr pkt)
+./gpu-compute/compute_unit.cc:    PacketPtr pkt = new Packet(req, MemCmd::MemFenceReq);
+./gpu-compute/compute_unit.cc:ComputeUnit::DataPort::processMemRespEvent(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:ComputeUnit::DTLBPort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:            PacketPtr prefetch_pkt = new Packet(prefetch_req, requestCmd);
+./gpu-compute/compute_unit.cc:    PacketPtr new_pkt = new Packet(pkt->req, requestCmd);
+./gpu-compute/compute_unit.cc:ComputeUnit::DataPort::createMemReqEvent(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:ComputeUnit::DataPort::createMemRespEvent(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:ComputeUnit::DataPort::processMemReqEvent(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:        PacketPtr pkt = retries.front();
+./gpu-compute/compute_unit.cc:ComputeUnit::ITLBPort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:        PacketPtr pkt = retries.front();
+./gpu-compute/compute_unit.cc:    PacketPtr newPacket = new Packet(newRequest, MemCmd::ReadReq);
+./gpu-compute/compute_unit.cc:ComputeUnit::LDSPort::recvTimingResp(PacketPtr packet)
+./gpu-compute/compute_unit.cc:ComputeUnit::LDSPort::sendTimingReq(PacketPtr pkt)
+./gpu-compute/compute_unit.cc:        PacketPtr packet = retries.front();
+./gpu-compute/tlb_coalescer.hh:    typedef std::vector<PacketPtr> coalescedReq;
+./gpu-compute/tlb_coalescer.hh:     * address. Each hash_map entry has a vector of PacketPtr associated
+./gpu-compute/tlb_coalescer.hh:    bool canCoalesce(PacketPtr pkt1, PacketPtr pkt2);
+./gpu-compute/tlb_coalescer.hh:    void updatePhysAddresses(PacketPtr pkt);
+./gpu-compute/tlb_coalescer.hh:        virtual bool recvTimingReq(PacketPtr pkt);
+./gpu-compute/tlb_coalescer.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/tlb_coalescer.hh:        virtual void recvFunctional(PacketPtr pkt);
+./gpu-compute/tlb_coalescer.hh:        std::deque<PacketPtr> retries;
+./gpu-compute/tlb_coalescer.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/tlb_coalescer.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/tlb_coalescer.hh:        virtual void recvFunctional(PacketPtr pkt);
+./gpu-compute/dispatcher.cc:GpuDispatcher::read(PacketPtr pkt)
+./gpu-compute/dispatcher.cc:GpuDispatcher::write(PacketPtr pkt)
+./gpu-compute/shader.hh:    bool processTimingPacket(PacketPtr pkt);
+./gpu-compute/shader.hh:    void functionalTLBAccess(PacketPtr pkt, int cu_id, BaseTLB::Mode mode);
+./gpu-compute/lds_state.hh:        recvTimingReq(PacketPtr pkt);
+./gpu-compute/lds_state.hh:        recvAtomic(PacketPtr pkt)
+./gpu-compute/lds_state.hh:        recvFunctional(PacketPtr pkt);
+./gpu-compute/lds_state.hh:        loadData(PacketPtr packet);
+./gpu-compute/lds_state.hh:        storeData(PacketPtr packet);
+./gpu-compute/lds_state.hh:        atomicOperation(PacketPtr packet);
+./gpu-compute/lds_state.hh:    std::queue<std::pair<Tick, PacketPtr>> returnQueue;
+./gpu-compute/lds_state.hh:    getDynInstr(PacketPtr packet);
+./gpu-compute/lds_state.hh:    processPacket(PacketPtr packet);
+./gpu-compute/lds_state.hh:    countBankConflicts(PacketPtr packet, unsigned *bankAccesses);
+./gpu-compute/lds_state.hh:    returnQueuePush(std::pair<Tick, PacketPtr> thePair);
+./gpu-compute/fetch_unit.cc:    PacketPtr pkt = new Packet(req, MemCmd::ReadReq);
+./gpu-compute/fetch_unit.cc:FetchUnit::fetch(PacketPtr pkt, Wavefront *wavefront)
+./gpu-compute/fetch_unit.cc:    PacketPtr oldPkt = pkt;
+./gpu-compute/fetch_unit.cc:FetchUnit::processFetchReturn(PacketPtr pkt)
+./gpu-compute/shader.cc:        PacketPtr pkt1 = new Packet(req2, cmd);
+./gpu-compute/shader.cc:        PacketPtr pkt2 = new Packet(req1, cmd);
+./gpu-compute/shader.cc:        PacketPtr new_pkt1 = new Packet(pkt1->req, cmd);
+./gpu-compute/shader.cc:        PacketPtr new_pkt2 = new Packet(pkt2->req, cmd);
+./gpu-compute/shader.cc:        PacketPtr pkt = new Packet(req, cmd);
+./gpu-compute/shader.cc:        PacketPtr new_pkt = new Packet(pkt->req, cmd);
+./gpu-compute/shader.cc:Shader::functionalTLBAccess(PacketPtr pkt, int cu_id, BaseTLB::Mode mode)
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::canCoalesce(PacketPtr incoming_pkt, PacketPtr coalesced_pkt)
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::updatePhysAddresses(PacketPtr pkt)
+./gpu-compute/tlb_coalescer.cc:        PacketPtr local_pkt = issuedTranslationsTable[virt_page_addr][i];
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::CpuSidePort::recvTimingReq(PacketPtr pkt)
+./gpu-compute/tlb_coalescer.cc:    PacketPtr first_packet = nullptr;
+./gpu-compute/tlb_coalescer.cc:        std::vector<PacketPtr> new_array;
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::CpuSidePort::recvFunctional(PacketPtr pkt)
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::MemSidePort::recvTimingResp(PacketPtr pkt)
+./gpu-compute/tlb_coalescer.cc:TLBCoalescer::MemSidePort::recvFunctional(PacketPtr pkt)
+./gpu-compute/tlb_coalescer.cc:            PacketPtr first_packet = iter->second[vector_index][0];
+./gpu-compute/dispatcher.hh:            virtual bool recvTimingResp(PacketPtr pkt) { return true; }
+./gpu-compute/dispatcher.hh:            virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/dispatcher.hh:            virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/dispatcher.hh:        Tick read(PacketPtr pkt);
+./gpu-compute/dispatcher.hh:        Tick write(PacketPtr pkt);
+./gpu-compute/fetch_unit.hh:    void fetch(PacketPtr pkt, Wavefront *wavefront);
+./gpu-compute/fetch_unit.hh:    void processFetchReturn(PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:                                     PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:        void handleFuncTranslationReturn(PacketPtr pkt, tlbOutcome outcome);
+./gpu-compute/gpu_tlb.hh:        void pagingProtectionChecks(ThreadContext *tc, PacketPtr pkt,
+./gpu-compute/gpu_tlb.hh:        void issueTLBLookup(PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:            virtual bool recvTimingReq(PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:            virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/gpu_tlb.hh:            virtual void recvFunctional(PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:            std::deque<PacketPtr> retries;
+./gpu-compute/gpu_tlb.hh:            virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:            virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/gpu_tlb.hh:            virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/gpu_tlb.hh:                               PacketPtr pkt);
+./gpu-compute/gpu_tlb.hh:                PacketPtr pkt;
+./gpu-compute/gpu_tlb.hh:                        PacketPtr _pkt);
+./gpu-compute/compute_unit.hh:    void fetch(PacketPtr pkt, Wavefront *wavefront);
+./gpu-compute/compute_unit.hh:    void sendRequest(GPUDynInstPtr gpuDynInst, int index, PacketPtr pkt);
+./gpu-compute/compute_unit.hh:    void sendSyncRequest(GPUDynInstPtr gpuDynInst, int index, PacketPtr pkt);
+./gpu-compute/compute_unit.hh:    void handleMemPacket(PacketPtr pkt, int memport_index);
+./gpu-compute/compute_unit.hh:    bool processTimingPacket(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:    void processFetchReturn(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        void processMemReqEvent(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        EventFunctionWrapper *createMemReqEvent(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        void processMemRespEvent(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        EventFunctionWrapper *createMemRespEvent(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        std::deque<std::pair<PacketPtr, GPUDynInstPtr>> retries;
+./gpu-compute/compute_unit.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/compute_unit.hh:        virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/compute_unit.hh:        std::deque<std::pair<PacketPtr, Wavefront*>> retries;
+./gpu-compute/compute_unit.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/compute_unit.hh:        virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/compute_unit.hh:        std::deque<PacketPtr> retries;
+./gpu-compute/compute_unit.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/compute_unit.hh:        virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/compute_unit.hh:        std::deque<PacketPtr> retries;
+./gpu-compute/compute_unit.hh:        virtual bool recvTimingResp(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        virtual Tick recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/compute_unit.hh:        virtual void recvFunctional(PacketPtr pkt) { }
+./gpu-compute/compute_unit.hh:        std::queue<PacketPtr> retries;
+./gpu-compute/compute_unit.hh:        sendTimingReq(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        recvTimingResp(PacketPtr pkt);
+./gpu-compute/compute_unit.hh:        recvAtomic(PacketPtr pkt) { return 0; }
+./gpu-compute/compute_unit.hh:        recvFunctional(PacketPtr pkt)

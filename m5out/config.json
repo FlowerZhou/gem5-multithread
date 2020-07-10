@@ -1,0 +1,1677 @@
+{
+    "name": null, 
+    "sim_quantum": 0, 
+    "system": {
+        "kernel": "", 
+        "mmap_using_noreserve": false, 
+        "kernel_addr_check": true, 
+        "membus": {
+            "point_of_coherency": true, 
+            "system": "system", 
+            "response_latency": 2, 
+            "cxx_class": "CoherentXBar", 
+            "forward_latency": 4, 
+            "clk_domain": "system.clk_domain", 
+            "point_of_unification": true, 
+            "width": 16, 
+            "eventq_index": 0, 
+            "default_p_state": "UNDEFINED", 
+            "p_state_clk_gate_max": 1000000000000, 
+            "master": {
+                "peer": [
+                    "system.cpu0.interrupts.pio", 
+                    "system.cpu0.interrupts.int_slave", 
+                    "system.cpu1.interrupts.pio", 
+                    "system.cpu1.interrupts.int_slave", 
+                    "system.cpu2.interrupts.pio", 
+                    "system.cpu2.interrupts.int_slave", 
+                    "system.cpu3.interrupts.pio", 
+                    "system.cpu3.interrupts.int_slave", 
+                    "system.cpu4.interrupts.pio", 
+                    "system.cpu4.interrupts.int_slave", 
+                    "system.cpu5.interrupts.pio", 
+                    "system.cpu5.interrupts.int_slave", 
+                    "system.cpu6.interrupts.pio", 
+                    "system.cpu6.interrupts.int_slave", 
+                    "system.cpu7.interrupts.pio", 
+                    "system.cpu7.interrupts.int_slave", 
+                    "system.mem_ctrls.port"
+                ], 
+                "role": "MASTER"
+            }, 
+            "type": "CoherentXBar", 
+            "frontend_latency": 3, 
+            "slave": {
+                "peer": [
+                    "system.system_port", 
+                    "system.cpu0.icache_port", 
+                    "system.cpu0.dcache_port", 
+                    "system.cpu0.itb.walker.port", 
+                    "system.cpu0.dtb.walker.port", 
+                    "system.cpu0.interrupts.int_master", 
+                    "system.cpu1.icache_port", 
+                    "system.cpu1.dcache_port", 
+                    "system.cpu1.itb.walker.port", 
+                    "system.cpu1.dtb.walker.port", 
+                    "system.cpu1.interrupts.int_master", 
+                    "system.cpu2.icache_port", 
+                    "system.cpu2.dcache_port", 
+                    "system.cpu2.itb.walker.port", 
+                    "system.cpu2.dtb.walker.port", 
+                    "system.cpu2.interrupts.int_master", 
+                    "system.cpu3.icache_port", 
+                    "system.cpu3.dcache_port", 
+                    "system.cpu3.itb.walker.port", 
+                    "system.cpu3.dtb.walker.port", 
+                    "system.cpu3.interrupts.int_master", 
+                    "system.cpu4.icache_port", 
+                    "system.cpu4.dcache_port", 
+                    "system.cpu4.itb.walker.port", 
+                    "system.cpu4.dtb.walker.port", 
+                    "system.cpu4.interrupts.int_master", 
+                    "system.cpu5.icache_port", 
+                    "system.cpu5.dcache_port", 
+                    "system.cpu5.itb.walker.port", 
+                    "system.cpu5.dtb.walker.port", 
+                    "system.cpu5.interrupts.int_master", 
+                    "system.cpu6.icache_port", 
+                    "system.cpu6.dcache_port", 
+                    "system.cpu6.itb.walker.port", 
+                    "system.cpu6.dtb.walker.port", 
+                    "system.cpu6.interrupts.int_master", 
+                    "system.cpu7.icache_port", 
+                    "system.cpu7.dcache_port", 
+                    "system.cpu7.itb.walker.port", 
+                    "system.cpu7.dtb.walker.port", 
+                    "system.cpu7.interrupts.int_master"
+                ], 
+                "role": "SLAVE"
+            }, 
+            "p_state_clk_gate_min": 1000, 
+            "snoop_filter": {
+                "name": "snoop_filter", 
+                "system": "system", 
+                "max_capacity": 8388608, 
+                "eventq_index": 0, 
+                "cxx_class": "SnoopFilter", 
+                "path": "system.membus.snoop_filter", 
+                "type": "SnoopFilter", 
+                "lookup_latency": 1
+            }, 
+            "power_model": [], 
+            "path": "system.membus", 
+            "snoop_response_latency": 4, 
+            "name": "membus", 
+            "p_state_clk_gate_bins": 20, 
+            "use_default_range": false
+        }, 
+        "symbolfile": "", 
+        "kvm_vm": null, 
+        "readfile": "", 
+        "thermal_model": null, 
+        "cxx_class": "System", 
+        "work_begin_cpu_id_exit": -1, 
+        "load_offset": 0, 
+        "work_begin_exit_count": 0, 
+        "p_state_clk_gate_min": 1000, 
+        "memories": [
+            "system.mem_ctrls"
+        ], 
+        "work_begin_ckpt_count": 0, 
+        "clk_domain": {
+            "name": "clk_domain", 
+            "clock": [
+                1000
+            ], 
+            "init_perf_level": 0, 
+            "voltage_domain": "system.voltage_domain", 
+            "eventq_index": 0, 
+            "cxx_class": "SrcClockDomain", 
+            "path": "system.clk_domain", 
+            "type": "SrcClockDomain", 
+            "domain_id": -1
+        }, 
+        "mem_ranges": [
+            "0:2147483647:0:0:0:0"
+        ], 
+        "eventq_index": 0, 
+        "default_p_state": "UNDEFINED", 
+        "p_state_clk_gate_max": 1000000000000, 
+        "dvfs_handler": {
+            "enable": false, 
+            "name": "dvfs_handler", 
+            "sys_clk_domain": "system.clk_domain", 
+            "transition_latency": 100000000, 
+            "eventq_index": 0, 
+            "cxx_class": "DVFSHandler", 
+            "domains": [], 
+            "path": "system.dvfs_handler", 
+            "type": "DVFSHandler"
+        }, 
+        "work_end_exit_count": 0, 
+        "type": "System", 
+        "voltage_domain": {
+            "name": "voltage_domain", 
+            "eventq_index": 0, 
+            "voltage": [
+                1.0
+            ], 
+            "cxx_class": "VoltageDomain", 
+            "path": "system.voltage_domain", 
+            "type": "VoltageDomain"
+        }, 
+        "cache_line_size": 64, 
+        "boot_osflags": "a", 
+        "system_port": {
+            "peer": "system.membus.slave[0]", 
+            "role": "MASTER"
+        }, 
+        "power_model": [], 
+        "work_cpus_ckpt_count": 0, 
+        "thermal_components": [], 
+        "path": "system", 
+        "cpu_clk_domain": {
+            "name": "cpu_clk_domain", 
+            "clock": [
+                500
+            ], 
+            "init_perf_level": 0, 
+            "voltage_domain": "system.cpu_voltage_domain", 
+            "eventq_index": 0, 
+            "cxx_class": "SrcClockDomain", 
+            "path": "system.cpu_clk_domain", 
+            "type": "SrcClockDomain", 
+            "domain_id": -1
+        }, 
+        "work_end_ckpt_count": 0, 
+        "mem_mode": "atomic", 
+        "name": "system", 
+        "init_param": 0, 
+        "p_state_clk_gate_bins": 20, 
+        "kernel_extras": [], 
+        "load_addr_mask": 18446744073709551615, 
+        "cpu": [
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 0, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu0.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[3]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 0, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu0.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 0, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu0.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 0, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 0, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[1]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[5]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[0]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[1]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu0.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 0, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu0.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[2]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu0", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    {
+                        "uid": 100, 
+                        "pid": 100, 
+                        "kvmInSE": false, 
+                        "cxx_class": "Process", 
+                        "executable": "example/simple", 
+                        "drivers": [], 
+                        "system": "system", 
+                        "gid": 100, 
+                        "eventq_index": 0, 
+                        "env": [], 
+                        "maxStackSize": 67108864, 
+                        "ppid": 0, 
+                        "type": "Process", 
+                        "cwd": "/home/zhouyuchen/work_space/gem5-multithread", 
+                        "pgid": 100, 
+                        "simpoint": 0, 
+                        "euid": 100, 
+                        "input": "cin", 
+                        "path": "system.cpu0.workload", 
+                        "name": "workload", 
+                        "cmd": [
+                            "example/simple"
+                        ], 
+                        "errout": "cerr", 
+                        "useArchPT": false, 
+                        "egid": 100, 
+                        "output": "cout"
+                    }
+                ], 
+                "name": "cpu0", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 0, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu0.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[4]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 0, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu0.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 0, 
+                        "path": "system.cpu0.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 0, 
+                    "path": "system.cpu0.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 1, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu1.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[8]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 1, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu1.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 1, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu1.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 1, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 1, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[6]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[10]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[2]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[3]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu1.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 1, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu1.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[7]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu1", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    {
+                        "uid": 100, 
+                        "pid": 101, 
+                        "kvmInSE": false, 
+                        "cxx_class": "Process", 
+                        "executable": "example/simple", 
+                        "drivers": [], 
+                        "system": "system", 
+                        "gid": 100, 
+                        "eventq_index": 1, 
+                        "env": [], 
+                        "maxStackSize": 67108864, 
+                        "ppid": 0, 
+                        "type": "Process", 
+                        "cwd": "/home/zhouyuchen/work_space/gem5-multithread", 
+                        "pgid": 100, 
+                        "simpoint": 0, 
+                        "euid": 100, 
+                        "input": "cin", 
+                        "path": "system.cpu1.workload", 
+                        "name": "workload", 
+                        "cmd": [
+                            "example/simple"
+                        ], 
+                        "errout": "cerr", 
+                        "useArchPT": false, 
+                        "egid": 100, 
+                        "output": "cout"
+                    }
+                ], 
+                "name": "cpu1", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 1, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu1.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[9]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 1, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu1.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 1, 
+                        "path": "system.cpu1.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 1, 
+                    "path": "system.cpu1.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 2, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu2.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[13]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 2, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu2.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 2, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu2.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 2, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 2, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[11]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[15]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[4]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[5]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu2.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 2, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu2.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[12]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu2", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu2", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 2, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu2.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[14]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 2, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu2.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 2, 
+                        "path": "system.cpu2.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 2, 
+                    "path": "system.cpu2.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 3, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu3.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[18]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 3, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu3.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 3, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu3.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 3, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 3, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[16]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[20]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[6]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[7]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu3.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 3, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu3.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[17]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu3", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu3", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 3, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu3.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[19]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 3, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu3.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 3, 
+                        "path": "system.cpu3.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 3, 
+                    "path": "system.cpu3.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 4, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu4.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[23]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 4, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu4.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 4, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu4.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 4, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 4, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[21]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[25]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[8]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[9]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu4.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 4, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu4.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[22]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu4", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu4", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 4, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu4.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[24]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 4, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu4.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 4, 
+                        "path": "system.cpu4.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 4, 
+                    "path": "system.cpu4.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 5, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu5.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[28]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 5, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu5.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 5, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu5.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 5, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 5, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[26]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[30]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[10]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[11]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu5.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 5, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu5.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[27]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu5", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu5", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 5, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu5.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[29]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 5, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu5.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 5, 
+                        "path": "system.cpu5.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 5, 
+                    "path": "system.cpu5.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 6, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu6.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[33]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 6, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu6.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 6, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu6.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 6, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 6, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[31]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[35]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[12]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[13]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu6.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 6, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu6.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[32]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu6", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu6", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 6, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu6.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[34]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 6, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu6.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 6, 
+                        "path": "system.cpu6.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 6, 
+                    "path": "system.cpu6.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }, 
+            {
+                "do_statistics_insts": true, 
+                "numThreads": 1, 
+                "itb": {
+                    "name": "itb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 7, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu7.itb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[38]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 7, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu7.itb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "power_gating_on_idle": false, 
+                "function_trace": false, 
+                "do_checkpoint_insts": true, 
+                "cxx_class": "AtomicSimpleCPU", 
+                "max_loads_all_threads": 0, 
+                "system": "system", 
+                "apic_clk_domain": {
+                    "name": "apic_clk_domain", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "eventq_index": 7, 
+                    "cxx_class": "DerivedClockDomain", 
+                    "path": "system.cpu7.apic_clk_domain", 
+                    "type": "DerivedClockDomain", 
+                    "clk_divider": 16
+                }, 
+                "clk_domain": "system.cpu_clk_domain", 
+                "function_trace_start": 0, 
+                "cpu_id": 7, 
+                "width": 1, 
+                "checker": null, 
+                "eventq_index": 7, 
+                "default_p_state": "UNDEFINED", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "do_quiesce": true, 
+                "type": "AtomicSimpleCPU", 
+                "profile": 0, 
+                "icache_port": {
+                    "peer": "system.membus.slave[36]", 
+                    "role": "MASTER"
+                }, 
+                "p_state_clk_gate_bins": 20, 
+                "p_state_clk_gate_min": 1000, 
+                "syscallRetryLatency": 10000, 
+                "interrupts": [
+                    {
+                        "int_master": {
+                            "peer": "system.membus.slave[40]", 
+                            "role": "MASTER"
+                        }, 
+                        "name": "interrupts", 
+                        "p_state_clk_gate_min": 1000, 
+                        "pio": {
+                            "peer": "system.membus.master[14]", 
+                            "role": "SLAVE"
+                        }, 
+                        "int_slave": {
+                            "peer": "system.membus.master[15]", 
+                            "role": "SLAVE"
+                        }, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Interrupts", 
+                        "pio_latency": 100000, 
+                        "clk_domain": "system.cpu7.apic_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "int_latency": 1000, 
+                        "eventq_index": 7, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu7.interrupts", 
+                        "pio_addr": 2305843009213693952, 
+                        "type": "X86LocalApic"
+                    }
+                ], 
+                "dcache_port": {
+                    "peer": "system.membus.slave[37]", 
+                    "role": "MASTER"
+                }, 
+                "socket_id": 0, 
+                "power_model": [], 
+                "max_insts_all_threads": 0, 
+                "simulate_data_stalls": false, 
+                "path": "system.cpu7", 
+                "pwr_gating_latency": 300, 
+                "max_loads_any_thread": 0, 
+                "switched_out": false, 
+                "workload": [
+                    "system.cpu1.workload"
+                ], 
+                "name": "cpu7", 
+                "wait_for_remote_gdb": false, 
+                "dtb": {
+                    "name": "dtb", 
+                    "p_state_clk_gate_min": 1000, 
+                    "p_state_clk_gate_bins": 20, 
+                    "cxx_class": "X86ISA::TLB", 
+                    "clk_domain": "system.cpu_clk_domain", 
+                    "power_model": [], 
+                    "walker": {
+                        "name": "walker", 
+                        "p_state_clk_gate_min": 1000, 
+                        "p_state_clk_gate_bins": 20, 
+                        "cxx_class": "X86ISA::Walker", 
+                        "clk_domain": "system.cpu_clk_domain", 
+                        "power_model": [], 
+                        "system": "system", 
+                        "eventq_index": 7, 
+                        "default_p_state": "UNDEFINED", 
+                        "p_state_clk_gate_max": 1000000000000, 
+                        "path": "system.cpu7.dtb.walker", 
+                        "type": "X86PagetableWalker", 
+                        "port": {
+                            "peer": "system.membus.slave[39]", 
+                            "role": "MASTER"
+                        }, 
+                        "num_squash_per_cycle": 4
+                    }, 
+                    "eventq_index": 7, 
+                    "default_p_state": "UNDEFINED", 
+                    "p_state_clk_gate_max": 1000000000000, 
+                    "path": "system.cpu7.dtb", 
+                    "type": "X86TLB", 
+                    "size": 64
+                }, 
+                "simpoint_start_insts": [], 
+                "max_insts_any_thread": 0, 
+                "simulate_inst_stalls": false, 
+                "progress_interval": 0, 
+                "branchPred": null, 
+                "isa": [
+                    {
+                        "eventq_index": 7, 
+                        "path": "system.cpu7.isa", 
+                        "type": "X86ISA", 
+                        "name": "isa", 
+                        "cxx_class": "X86ISA::ISA"
+                    }
+                ], 
+                "tracer": {
+                    "eventq_index": 7, 
+                    "path": "system.cpu7.tracer", 
+                    "type": "ExeTracer", 
+                    "name": "tracer", 
+                    "cxx_class": "Trace::ExeTracer"
+                }
+            }
+        ], 
+        "multi_thread": false, 
+        "cpu_voltage_domain": {
+            "name": "cpu_voltage_domain", 
+            "eventq_index": 0, 
+            "voltage": [
+                1.0
+            ], 
+            "cxx_class": "VoltageDomain", 
+            "path": "system.cpu_voltage_domain", 
+            "type": "VoltageDomain"
+        }, 
+        "mem_ctrls": [
+            {
+                "range": "0:2147483647:6:19:0:0", 
+                "latency": 30000, 
+                "name": "mem_ctrls", 
+                "p_state_clk_gate_min": 1000, 
+                "eventq_index": 0, 
+                "p_state_clk_gate_bins": 20, 
+                "default_p_state": "UNDEFINED", 
+                "kvm_map": true, 
+                "clk_domain": "system.clk_domain", 
+                "power_model": [], 
+                "latency_var": 0, 
+                "bandwidth": "73.000000", 
+                "conf_table_reported": true, 
+                "cxx_class": "SimpleMemory", 
+                "p_state_clk_gate_max": 1000000000000, 
+                "path": "system.mem_ctrls", 
+                "null": false, 
+                "type": "SimpleMemory", 
+                "port": {
+                    "peer": "system.membus.master[16]", 
+                    "role": "SLAVE"
+                }, 
+                "in_addr_map": true
+            }
+        ], 
+        "num_work_ids": 16, 
+        "work_item_id": -1, 
+        "exit_on_work_items": false
+    }, 
+    "time_sync_period": 100000000000, 
+    "eventq_index": 0, 
+    "time_sync_spin_threshold": 100000000, 
+    "cxx_class": "Root", 
+    "path": "root", 
+    "time_sync_enable": false, 
+    "type": "Root", 
+    "full_system": false
+}

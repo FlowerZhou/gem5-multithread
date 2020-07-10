@@ -1,0 +1,173 @@
+>> Output files will be saved to "[1;31m/home/zhouyuchen/work_space/output/accelerate/m5out[0m"!
+in m5Main : command is import m5 
+init core !
+in m5Main : command is m5.main() 
+text is --at-instruction
+code is /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt
+num of cores is 2
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled May 14 2020 17:46:15
+gem5 started May 14 2020 17:46:51
+gem5 executing on server17, pid 15103
+command line: /home/zhouyuchen/work_space/gem5-with-chinese-comment//build/X86/gem5.opt /home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py --cpu-type=TimingSimpleCPU --num-cpus=2 --mem-type=SimpleMemory --mem-size=2GB --at-instruction -c 'example/simple;example/simple' -o ';'
+
+filecode is <code object <module> at 0x7fb6f124cb30, file "/home/zhouyuchen/work_space/gem5-with-chinese-comment//configs/example/se.py", line 45>
+the program is ['example/simple']
+the number of workload is 1 
+the program is ['example/simple']
+the number of workload is 2 
+numThreads is 1 
+multiprocesses are [<m5.objects.Process.Process object at 0x7fb6f11c0610>, <m5.objects.Process.Process object at 0x7fb6f11e2a50>]
+CPUClass is TimingSimpleCPU , test_mem_mode is timing , FutureClass is None
+create a thread !
+create a thread !
+Global frequency set at 1000000000000 ticks per second
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+SimpleMemory Port : system.mem_ctrls.port !
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+PacketQueue construct !
+eventqueue_index is system.cpu0.interrupts.pio-RespPacketQueue 
+str is 0
+Index is 0 
+PacketQueue construct !
+eventqueue_index is system.cpu0.interrupts.int_master-ReqPacketQueue 
+str is 0
+Index is 0 
+PacketQueue construct !
+eventqueue_index is system.cpu0.interrupts.int_master-SnoopRespPacketQueue 
+str is 0
+Index is 0 
+PacketQueue construct !
+eventqueue_index is system.cpu0.interrupts.int_slave-RespPacketQueue 
+str is 0
+Index is 0 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+TIMING CPU ID IS 0 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+PacketQueue construct !
+eventqueue_index is system.cpu1.interrupts.pio-RespPacketQueue 
+str is 1
+Index is 1 
+PacketQueue construct !
+eventqueue_index is system.cpu1.interrupts.int_master-ReqPacketQueue 
+str is 1
+Index is 1 
+PacketQueue construct !
+eventqueue_index is system.cpu1.interrupts.int_master-SnoopRespPacketQueue 
+str is 1
+Index is 1 
+PacketQueue construct !
+eventqueue_index is system.cpu1.interrupts.int_slave-RespPacketQueue 
+str is 1
+Index is 1 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+TIMING CPU ID IS 1 
+Insert SimObjects ! 
+Insert SimObjects ! 
+Insert SimObjects ! 
+BaseXBar construct !
+ Layer name is system.membus.reqLayer0 
+Layer name is system.membus.snoopLayer0 
+Layer name is system.membus.reqLayer1 
+Layer name is system.membus.snoopLayer1 
+Layer name is system.membus.reqLayer2 
+Layer name is system.membus.snoopLayer2 
+Layer name is system.membus.reqLayer3 
+Layer name is system.membus.snoopLayer3 
+Layer name is system.membus.reqLayer4 
+Layer name is system.membus.snoopLayer4 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[0]-RespPacketQueue 
+str is 0
+k is 0.000000
+Index is 0 
+Layer name is system.membus.respLayer0 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[1]-RespPacketQueue 
+str is 1
+k is 0.200000
+Index is 0 
+Layer name is system.membus.respLayer1 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[2]-RespPacketQueue 
+str is 2
+k is 0.400000
+Index is 0 
+Layer name is system.membus.respLayer2 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[3]-RespPacketQueue 
+str is 3
+k is 0.600000
+Index is 0 
+Layer name is system.membus.respLayer3 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[4]-RespPacketQueue 
+str is 4
+k is 0.800000
+Index is 0 
+Layer name is system.membus.respLayer4 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[5]-RespPacketQueue 
+str is 5
+k is 1.000000
+Index is 0 
+Layer name is system.membus.respLayer5 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[6]-RespPacketQueue 
+str is 6
+k is 1.200000
+Index is 1 
+Layer name is system.membus.respLayer6 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[7]-RespPacketQueue 
+str is 7
+k is 1.400000
+Index is 1 
+Layer name is system.membus.respLayer7 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[8]-RespPacketQueue 
+str is 8
+k is 1.600000
+Index is 1 
+Layer name is system.membus.respLayer8 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[9]-RespPacketQueue 
+str is 9
+k is 1.800000
+Index is 1 
+Layer name is system.membus.respLayer9 
+PacketQueue construct !
+eventqueue_index is system.membus.slave[10]-RespPacketQueue 
+str is 10
+k is 2.000000
+Index is 1 
+Layer name is system.membus.respLayer10 
+from pollevent !
+from pollevent !
+**** REAL SIMULATION ****
+The number of thread is : 2
+Now coming to the GlobalEvent schedule function ! 

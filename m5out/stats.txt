@@ -1,0 +1,872 @@
+
+---------- Begin Simulation Statistics ----------
+final_tick                               18446744073709551616                       # Number of ticks from beginning of simulation (restored from checkpoints and never reset)
+host_inst_rate                                 519197                       # Simulator instruction rate (inst/s)
+host_mem_usage                                2329972                       # Number of bytes of host memory used
+host_op_rate                                   965825                       # Simulator op (including micro ops) rate (op/s)
+host_seconds                                     0.53                       # Real time elapsed on the host
+host_tick_rate                           34583952890549899264                       # Simulator tick rate (ticks/s)
+sim_freq                                 1000000000000                       # Frequency of simulated ticks
+sim_insts                                      276844                       # Number of instructions simulated
+sim_ops                                        515134                       # Number of ops (including micro ops) simulated
+sim_seconds                              18446744.073710                       # Number of seconds simulated
+sim_ticks                                18446744073709551616                       # Number of ticks simulated
+system.clk_domain.clock                          1000                       # Clock period in ticks
+system.cpu0.Branches                            29743                       # Number of branches fetched
+system.cpu0.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu0.committedInsts                     138422                       # Number of instructions committed
+system.cpu0.committedOps                       257567                       # Number of ops (including micro ops) committed
+system.cpu0.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.dtb.rdAccesses                      35108                       # TLB accesses on read requests
+system.cpu0.dtb.rdMisses                           71                       # TLB misses on read requests
+system.cpu0.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.dtb.wrAccesses                      10650                       # TLB accesses on write requests
+system.cpu0.dtb.wrMisses                           17                       # TLB misses on write requests
+system.cpu0.idle_fraction                        -inf                       # Percentage of idle cycles
+system.cpu0.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu0.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu0.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.itb.wrAccesses                     182433                       # TLB accesses on write requests
+system.cpu0.itb.wrMisses                           92                       # TLB misses on write requests
+system.cpu0.not_idle_fraction                     inf                       # Percentage of non-idle cycles
+system.cpu0.numCycles                          301578                       # number of cpu cycles simulated
+system.cpu0.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu0.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu0.num_busy_cycles                       inf                       # Number of busy cycles
+system.cpu0.num_cc_register_reads              166881                       # number of times the CC registers were read
+system.cpu0.num_cc_register_writes             106032                       # number of times the CC registers were written
+system.cpu0.num_conditional_control_insts        26705                       # number of instructions that are conditional controls
+system.cpu0.num_fp_alu_accesses                  3372                       # Number of float alu accesses
+system.cpu0.num_fp_insts                         3372                       # number of float instructions
+system.cpu0.num_fp_register_reads                5230                       # number of times the floating registers were read
+system.cpu0.num_fp_register_writes               2525                       # number of times the floating registers were written
+system.cpu0.num_func_calls                       1302                       # number of times a function call or return occured
+system.cpu0.num_idle_cycles                      -inf                       # Number of idle cycles
+system.cpu0.num_int_alu_accesses               254510                       # Number of integer alu accesses
+system.cpu0.num_int_insts                      254510                       # number of integer instructions
+system.cpu0.num_int_register_reads             494060                       # number of times the integer registers were read
+system.cpu0.num_int_register_writes            216266                       # number of times the integer registers were written
+system.cpu0.num_load_insts                      35105                       # Number of load instructions
+system.cpu0.num_mem_refs                        45755                       # number of memory refs
+system.cpu0.num_store_insts                     10650                       # Number of store instructions
+system.cpu0.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu0.num_vec_insts                           0                       # number of vector instructions
+system.cpu0.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu0.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu0.op_class::No_OpClass                 1205      0.47%      0.47% # Class of executed instruction
+system.cpu0.op_class::IntAlu                   207341     80.50%     80.97% # Class of executed instruction
+system.cpu0.op_class::IntMult                      11      0.00%     80.97% # Class of executed instruction
+system.cpu0.op_class::IntDiv                     1120      0.43%     81.41% # Class of executed instruction
+system.cpu0.op_class::FloatAdd                     43      0.02%     81.42% # Class of executed instruction
+system.cpu0.op_class::FloatCmp                      0      0.00%     81.42% # Class of executed instruction
+system.cpu0.op_class::FloatCvt                     48      0.02%     81.44% # Class of executed instruction
+system.cpu0.op_class::FloatMult                     0      0.00%     81.44% # Class of executed instruction
+system.cpu0.op_class::FloatMultAcc                  0      0.00%     81.44% # Class of executed instruction
+system.cpu0.op_class::FloatDiv                      0      0.00%     81.44% # Class of executed instruction
+system.cpu0.op_class::FloatMisc                     0      0.00%     81.44% # Class of executed instruction
+system.cpu0.op_class::FloatSqrt                     0      0.00%     81.44% # Class of executed instruction
+system.cpu0.op_class::SimdAdd                     306      0.12%     81.56% # Class of executed instruction
+system.cpu0.op_class::SimdAddAcc                    0      0.00%     81.56% # Class of executed instruction
+system.cpu0.op_class::SimdAlu                     437      0.17%     81.73% # Class of executed instruction
+system.cpu0.op_class::SimdCmp                       0      0.00%     81.73% # Class of executed instruction
+system.cpu0.op_class::SimdCvt                     692      0.27%     82.00% # Class of executed instruction
+system.cpu0.op_class::SimdMisc                    488      0.19%     82.19% # Class of executed instruction
+system.cpu0.op_class::SimdMult                      0      0.00%     82.19% # Class of executed instruction
+system.cpu0.op_class::SimdMultAcc                   0      0.00%     82.19% # Class of executed instruction
+system.cpu0.op_class::SimdShift                   121      0.05%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdShiftAcc                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdDiv                       0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdSqrt                      0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatAdd                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatAlu                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatCmp                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatCvt                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatDiv                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatMisc                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatMult                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatMultAcc              0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatSqrt                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdReduceAdd                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdReduceAlu                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdReduceCmp                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatReduceAdd            0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdFloatReduceCmp            0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdAes                       0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdAesMix                    0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdSha1Hash                  0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdSha1Hash2                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdSha256Hash                0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdSha256Hash2               0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdShaSigma2                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdShaSigma3                 0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::SimdPredAlu                   0      0.00%     82.24% # Class of executed instruction
+system.cpu0.op_class::MemRead                   34323     13.33%     95.56% # Class of executed instruction
+system.cpu0.op_class::MemWrite                  10234      3.97%     99.53% # Class of executed instruction
+system.cpu0.op_class::FloatMemRead                782      0.30%     99.84% # Class of executed instruction
+system.cpu0.op_class::FloatMemWrite               416      0.16%    100.00% # Class of executed instruction
+system.cpu0.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+system.cpu0.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+system.cpu0.op_class::total                    257567                       # Class of executed instruction
+system.cpu0.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu0.workload.numSyscalls                   31                       # Number of system calls
+system.cpu1.Branches                            29743                       # Number of branches fetched
+system.cpu1.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu1.committedInsts                     138422                       # Number of instructions committed
+system.cpu1.committedOps                       257567                       # Number of ops (including micro ops) committed
+system.cpu1.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.dtb.rdAccesses                      35108                       # TLB accesses on read requests
+system.cpu1.dtb.rdMisses                           71                       # TLB misses on read requests
+system.cpu1.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.dtb.wrAccesses                      10650                       # TLB accesses on write requests
+system.cpu1.dtb.wrMisses                           17                       # TLB misses on write requests
+system.cpu1.idle_fraction                        -inf                       # Percentage of idle cycles
+system.cpu1.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu1.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu1.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.itb.wrAccesses                     182433                       # TLB accesses on write requests
+system.cpu1.itb.wrMisses                           91                       # TLB misses on write requests
+system.cpu1.not_idle_fraction                     inf                       # Percentage of non-idle cycles
+system.cpu1.numCycles                          301578                       # number of cpu cycles simulated
+system.cpu1.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu1.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu1.num_busy_cycles                       inf                       # Number of busy cycles
+system.cpu1.num_cc_register_reads              166881                       # number of times the CC registers were read
+system.cpu1.num_cc_register_writes             106032                       # number of times the CC registers were written
+system.cpu1.num_conditional_control_insts        26705                       # number of instructions that are conditional controls
+system.cpu1.num_fp_alu_accesses                  3372                       # Number of float alu accesses
+system.cpu1.num_fp_insts                         3372                       # number of float instructions
+system.cpu1.num_fp_register_reads                5230                       # number of times the floating registers were read
+system.cpu1.num_fp_register_writes               2525                       # number of times the floating registers were written
+system.cpu1.num_func_calls                       1302                       # number of times a function call or return occured
+system.cpu1.num_idle_cycles                      -inf                       # Number of idle cycles
+system.cpu1.num_int_alu_accesses               254510                       # Number of integer alu accesses
+system.cpu1.num_int_insts                      254510                       # number of integer instructions
+system.cpu1.num_int_register_reads             494060                       # number of times the integer registers were read
+system.cpu1.num_int_register_writes            216266                       # number of times the integer registers were written
+system.cpu1.num_load_insts                      35105                       # Number of load instructions
+system.cpu1.num_mem_refs                        45755                       # number of memory refs
+system.cpu1.num_store_insts                     10650                       # Number of store instructions
+system.cpu1.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu1.num_vec_insts                           0                       # number of vector instructions
+system.cpu1.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu1.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu1.op_class::No_OpClass                 1205      0.47%      0.47% # Class of executed instruction
+system.cpu1.op_class::IntAlu                   207341     80.50%     80.97% # Class of executed instruction
+system.cpu1.op_class::IntMult                      11      0.00%     80.97% # Class of executed instruction
+system.cpu1.op_class::IntDiv                     1120      0.43%     81.41% # Class of executed instruction
+system.cpu1.op_class::FloatAdd                     43      0.02%     81.42% # Class of executed instruction
+system.cpu1.op_class::FloatCmp                      0      0.00%     81.42% # Class of executed instruction
+system.cpu1.op_class::FloatCvt                     48      0.02%     81.44% # Class of executed instruction
+system.cpu1.op_class::FloatMult                     0      0.00%     81.44% # Class of executed instruction
+system.cpu1.op_class::FloatMultAcc                  0      0.00%     81.44% # Class of executed instruction
+system.cpu1.op_class::FloatDiv                      0      0.00%     81.44% # Class of executed instruction
+system.cpu1.op_class::FloatMisc                     0      0.00%     81.44% # Class of executed instruction
+system.cpu1.op_class::FloatSqrt                     0      0.00%     81.44% # Class of executed instruction
+system.cpu1.op_class::SimdAdd                     306      0.12%     81.56% # Class of executed instruction
+system.cpu1.op_class::SimdAddAcc                    0      0.00%     81.56% # Class of executed instruction
+system.cpu1.op_class::SimdAlu                     437      0.17%     81.73% # Class of executed instruction
+system.cpu1.op_class::SimdCmp                       0      0.00%     81.73% # Class of executed instruction
+system.cpu1.op_class::SimdCvt                     692      0.27%     82.00% # Class of executed instruction
+system.cpu1.op_class::SimdMisc                    488      0.19%     82.19% # Class of executed instruction
+system.cpu1.op_class::SimdMult                      0      0.00%     82.19% # Class of executed instruction
+system.cpu1.op_class::SimdMultAcc                   0      0.00%     82.19% # Class of executed instruction
+system.cpu1.op_class::SimdShift                   121      0.05%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdShiftAcc                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdDiv                       0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdSqrt                      0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatAdd                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatAlu                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatCmp                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatCvt                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatDiv                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatMisc                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatMult                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatMultAcc              0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatSqrt                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdReduceAdd                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdReduceAlu                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdReduceCmp                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatReduceAdd            0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdFloatReduceCmp            0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdAes                       0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdAesMix                    0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdSha1Hash                  0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdSha1Hash2                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdSha256Hash                0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdSha256Hash2               0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdShaSigma2                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdShaSigma3                 0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::SimdPredAlu                   0      0.00%     82.24% # Class of executed instruction
+system.cpu1.op_class::MemRead                   34323     13.33%     95.56% # Class of executed instruction
+system.cpu1.op_class::MemWrite                  10234      3.97%     99.53% # Class of executed instruction
+system.cpu1.op_class::FloatMemRead                782      0.30%     99.84% # Class of executed instruction
+system.cpu1.op_class::FloatMemWrite               416      0.16%    100.00% # Class of executed instruction
+system.cpu1.op_class::IprAccess                     0      0.00%    100.00% # Class of executed instruction
+system.cpu1.op_class::InstPrefetch                  0      0.00%    100.00% # Class of executed instruction
+system.cpu1.op_class::total                    257567                       # Class of executed instruction
+system.cpu1.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu1.workload.numSyscalls                   31                       # Number of system calls
+system.cpu2.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu2.committedInsts                          0                       # Number of instructions committed
+system.cpu2.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu2.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu2.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu2.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu2.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu2.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu2.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu2.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu2.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu2.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu2.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu2.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu2.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu2.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu2.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu2.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu2.numCycles                               0                       # number of cpu cycles simulated
+system.cpu2.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu2.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu2.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu2.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu2.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu2.num_fp_insts                            0                       # number of float instructions
+system.cpu2.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu2.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu2.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu2.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu2.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu2.num_int_insts                           0                       # number of integer instructions
+system.cpu2.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu2.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu2.num_load_insts                          0                       # Number of load instructions
+system.cpu2.num_mem_refs                            0                       # number of memory refs
+system.cpu2.num_store_insts                         0                       # Number of store instructions
+system.cpu2.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu2.num_vec_insts                           0                       # number of vector instructions
+system.cpu2.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu2.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu2.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu2.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu2.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu2.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu2.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu2.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu2.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu2.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu2.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu2.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu2.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu2.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu2.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu2.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu2.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu2.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu2.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu2.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu2.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu2.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu2.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu2.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu2.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu2.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu2.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu2.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu2.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu2.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu2.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu2.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu2.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu2.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu2.op_class::total                         0                       # Class of executed instruction
+system.cpu2.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu3.committedInsts                          0                       # Number of instructions committed
+system.cpu3.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu3.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu3.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu3.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu3.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu3.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu3.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu3.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu3.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu3.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu3.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu3.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu3.numCycles                               0                       # number of cpu cycles simulated
+system.cpu3.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu3.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu3.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu3.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu3.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu3.num_fp_insts                            0                       # number of float instructions
+system.cpu3.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu3.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu3.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu3.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu3.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu3.num_int_insts                           0                       # number of integer instructions
+system.cpu3.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu3.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu3.num_load_insts                          0                       # Number of load instructions
+system.cpu3.num_mem_refs                            0                       # number of memory refs
+system.cpu3.num_store_insts                         0                       # Number of store instructions
+system.cpu3.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu3.num_vec_insts                           0                       # number of vector instructions
+system.cpu3.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu3.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu3.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu3.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu3.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu3.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu3.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu3.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu3.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu3.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu3.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu3.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu3.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu3.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu3.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu3.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu3.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu3.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu3.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu3.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu3.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu3.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu3.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu3.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu3.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu3.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu3.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu3.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu3.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu3.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu3.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu3.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu3.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu3.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu3.op_class::total                         0                       # Class of executed instruction
+system.cpu3.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu4.committedInsts                          0                       # Number of instructions committed
+system.cpu4.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu4.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu4.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu4.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu4.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu4.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu4.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu4.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu4.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu4.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu4.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu4.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu4.numCycles                               0                       # number of cpu cycles simulated
+system.cpu4.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu4.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu4.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu4.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu4.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu4.num_fp_insts                            0                       # number of float instructions
+system.cpu4.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu4.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu4.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu4.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu4.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu4.num_int_insts                           0                       # number of integer instructions
+system.cpu4.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu4.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu4.num_load_insts                          0                       # Number of load instructions
+system.cpu4.num_mem_refs                            0                       # number of memory refs
+system.cpu4.num_store_insts                         0                       # Number of store instructions
+system.cpu4.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu4.num_vec_insts                           0                       # number of vector instructions
+system.cpu4.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu4.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu4.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu4.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu4.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu4.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu4.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu4.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu4.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu4.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu4.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu4.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu4.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu4.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu4.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu4.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu4.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu4.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu4.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu4.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu4.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu4.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu4.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu4.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu4.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu4.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu4.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu4.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu4.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu4.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu4.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu4.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu4.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu4.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu4.op_class::total                         0                       # Class of executed instruction
+system.cpu4.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu5.committedInsts                          0                       # Number of instructions committed
+system.cpu5.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu5.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu5.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu5.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu5.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu5.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu5.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu5.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu5.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu5.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu5.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu5.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu5.numCycles                               0                       # number of cpu cycles simulated
+system.cpu5.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu5.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu5.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu5.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu5.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu5.num_fp_insts                            0                       # number of float instructions
+system.cpu5.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu5.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu5.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu5.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu5.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu5.num_int_insts                           0                       # number of integer instructions
+system.cpu5.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu5.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu5.num_load_insts                          0                       # Number of load instructions
+system.cpu5.num_mem_refs                            0                       # number of memory refs
+system.cpu5.num_store_insts                         0                       # Number of store instructions
+system.cpu5.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu5.num_vec_insts                           0                       # number of vector instructions
+system.cpu5.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu5.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu5.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu5.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu5.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu5.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu5.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu5.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu5.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu5.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu5.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu5.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu5.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu5.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu5.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu5.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu5.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu5.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu5.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu5.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu5.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu5.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu5.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu5.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu5.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu5.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu5.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu5.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu5.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu5.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu5.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu5.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu5.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu5.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu5.op_class::total                         0                       # Class of executed instruction
+system.cpu5.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu6.committedInsts                          0                       # Number of instructions committed
+system.cpu6.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu6.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu6.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu6.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu6.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu6.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu6.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu6.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu6.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu6.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu6.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu6.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu6.numCycles                               0                       # number of cpu cycles simulated
+system.cpu6.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu6.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu6.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu6.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu6.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu6.num_fp_insts                            0                       # number of float instructions
+system.cpu6.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu6.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu6.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu6.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu6.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu6.num_int_insts                           0                       # number of integer instructions
+system.cpu6.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu6.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu6.num_load_insts                          0                       # Number of load instructions
+system.cpu6.num_mem_refs                            0                       # number of memory refs
+system.cpu6.num_store_insts                         0                       # Number of store instructions
+system.cpu6.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu6.num_vec_insts                           0                       # number of vector instructions
+system.cpu6.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu6.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu6.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu6.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu6.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu6.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu6.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu6.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu6.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu6.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu6.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu6.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu6.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu6.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu6.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu6.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu6.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu6.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu6.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu6.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu6.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu6.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu6.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu6.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu6.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu6.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu6.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu6.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu6.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu6.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu6.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu6.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu6.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu6.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu6.op_class::total                         0                       # Class of executed instruction
+system.cpu6.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.apic_clk_domain.clock                8000                       # Clock period in ticks
+system.cpu7.committedInsts                          0                       # Number of instructions committed
+system.cpu7.committedOps                            0                       # Number of ops (including micro ops) committed
+system.cpu7.dtb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.dtb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu7.dtb.rdMisses                            0                       # TLB misses on read requests
+system.cpu7.dtb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.dtb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu7.dtb.wrMisses                            0                       # TLB misses on write requests
+system.cpu7.idle_fraction                         nan                       # Percentage of idle cycles
+system.cpu7.interrupts.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.itb.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.itb.rdAccesses                          0                       # TLB accesses on read requests
+system.cpu7.itb.rdMisses                            0                       # TLB misses on read requests
+system.cpu7.itb.walker.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu7.itb.wrAccesses                          0                       # TLB accesses on write requests
+system.cpu7.itb.wrMisses                            0                       # TLB misses on write requests
+system.cpu7.not_idle_fraction                     nan                       # Percentage of non-idle cycles
+system.cpu7.numCycles                               0                       # number of cpu cycles simulated
+system.cpu7.numWorkItemsCompleted                   0                       # number of work items this cpu completed
+system.cpu7.numWorkItemsStarted                     0                       # number of work items this cpu started
+system.cpu7.num_busy_cycles                       nan                       # Number of busy cycles
+system.cpu7.num_conditional_control_insts            0                       # number of instructions that are conditional controls
+system.cpu7.num_fp_alu_accesses                     0                       # Number of float alu accesses
+system.cpu7.num_fp_insts                            0                       # number of float instructions
+system.cpu7.num_fp_register_reads                   0                       # number of times the floating registers were read
+system.cpu7.num_fp_register_writes                  0                       # number of times the floating registers were written
+system.cpu7.num_func_calls                          0                       # number of times a function call or return occured
+system.cpu7.num_idle_cycles                       nan                       # Number of idle cycles
+system.cpu7.num_int_alu_accesses                    0                       # Number of integer alu accesses
+system.cpu7.num_int_insts                           0                       # number of integer instructions
+system.cpu7.num_int_register_reads                  0                       # number of times the integer registers were read
+system.cpu7.num_int_register_writes                 0                       # number of times the integer registers were written
+system.cpu7.num_load_insts                          0                       # Number of load instructions
+system.cpu7.num_mem_refs                            0                       # number of memory refs
+system.cpu7.num_store_insts                         0                       # Number of store instructions
+system.cpu7.num_vec_alu_accesses                    0                       # Number of vector alu accesses
+system.cpu7.num_vec_insts                           0                       # number of vector instructions
+system.cpu7.num_vec_register_reads                  0                       # number of times the vector registers were read
+system.cpu7.num_vec_register_writes                 0                       # number of times the vector registers were written
+system.cpu7.op_class::No_OpClass                    0                       # Class of executed instruction
+system.cpu7.op_class::IntAlu                        0                       # Class of executed instruction
+system.cpu7.op_class::IntMult                       0                       # Class of executed instruction
+system.cpu7.op_class::IntDiv                        0                       # Class of executed instruction
+system.cpu7.op_class::FloatAdd                      0                       # Class of executed instruction
+system.cpu7.op_class::FloatCmp                      0                       # Class of executed instruction
+system.cpu7.op_class::FloatCvt                      0                       # Class of executed instruction
+system.cpu7.op_class::FloatMult                     0                       # Class of executed instruction
+system.cpu7.op_class::FloatMultAcc                  0                       # Class of executed instruction
+system.cpu7.op_class::FloatDiv                      0                       # Class of executed instruction
+system.cpu7.op_class::FloatMisc                     0                       # Class of executed instruction
+system.cpu7.op_class::FloatSqrt                     0                       # Class of executed instruction
+system.cpu7.op_class::SimdAdd                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdAddAcc                    0                       # Class of executed instruction
+system.cpu7.op_class::SimdAlu                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdCmp                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdCvt                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdMisc                      0                       # Class of executed instruction
+system.cpu7.op_class::SimdMult                      0                       # Class of executed instruction
+system.cpu7.op_class::SimdMultAcc                   0                       # Class of executed instruction
+system.cpu7.op_class::SimdShift                     0                       # Class of executed instruction
+system.cpu7.op_class::SimdShiftAcc                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdDiv                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdSqrt                      0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatAdd                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatAlu                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatCmp                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatCvt                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatDiv                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatMisc                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatMult                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatMultAcc              0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatSqrt                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdReduceAdd                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdReduceAlu                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdReduceCmp                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatReduceAdd            0                       # Class of executed instruction
+system.cpu7.op_class::SimdFloatReduceCmp            0                       # Class of executed instruction
+system.cpu7.op_class::SimdAes                       0                       # Class of executed instruction
+system.cpu7.op_class::SimdAesMix                    0                       # Class of executed instruction
+system.cpu7.op_class::SimdSha1Hash                  0                       # Class of executed instruction
+system.cpu7.op_class::SimdSha1Hash2                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdSha256Hash                0                       # Class of executed instruction
+system.cpu7.op_class::SimdSha256Hash2               0                       # Class of executed instruction
+system.cpu7.op_class::SimdShaSigma2                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdShaSigma3                 0                       # Class of executed instruction
+system.cpu7.op_class::SimdPredAlu                   0                       # Class of executed instruction
+system.cpu7.op_class::MemRead                       0                       # Class of executed instruction
+system.cpu7.op_class::MemWrite                      0                       # Class of executed instruction
+system.cpu7.op_class::FloatMemRead                  0                       # Class of executed instruction
+system.cpu7.op_class::FloatMemWrite                 0                       # Class of executed instruction
+system.cpu7.op_class::IprAccess                     0                       # Class of executed instruction
+system.cpu7.op_class::InstPrefetch                  0                       # Class of executed instruction
+system.cpu7.op_class::total                         0                       # Class of executed instruction
+system.cpu7.pwrStateResidencyTicks::ON   18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.cpu_clk_domain.clock                       500                       # Clock period in ticks
+system.cpu_voltage_domain.voltage                   1                       # Voltage in Volts
+system.mem_ctrls.bw_inst_read::.cpu0.inst            0                       # Instruction read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_inst_read::.cpu1.inst            0                       # Instruction read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_inst_read::total                0                       # Instruction read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::.cpu0.inst                0                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::.cpu0.data                0                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::.cpu1.inst                0                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::.cpu1.data                0                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_read::total                     0                       # Total read bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_total::.cpu0.inst               0                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::.cpu0.data               0                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::.cpu1.inst               0                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::.cpu1.data               0                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_total::total                    0                       # Total bandwidth to/from this memory (bytes/s)
+system.mem_ctrls.bw_write::.cpu0.data               0                       # Write bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_write::.cpu1.data               0                       # Write bandwidth from this memory (bytes/s)
+system.mem_ctrls.bw_write::total                    0                       # Write bandwidth from this memory (bytes/s)
+system.mem_ctrls.bytes_inst_read::.cpu0.inst      1459464                       # Number of instructions bytes read from this memory
+system.mem_ctrls.bytes_inst_read::.cpu1.inst      1459464                       # Number of instructions bytes read from this memory
+system.mem_ctrls.bytes_inst_read::total       2918928                       # Number of instructions bytes read from this memory
+system.mem_ctrls.bytes_read::.cpu0.inst       1459464                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::.cpu0.data        193730                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::.cpu1.inst       1459464                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::.cpu1.data        193730                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_read::total            3306388                       # Number of bytes read from this memory
+system.mem_ctrls.bytes_written::.cpu0.data        81288                       # Number of bytes written to this memory
+system.mem_ctrls.bytes_written::.cpu1.data        81288                       # Number of bytes written to this memory
+system.mem_ctrls.bytes_written::total          162576                       # Number of bytes written to this memory
+system.mem_ctrls.num_reads::.cpu0.inst         182433                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::.cpu0.data          35108                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::.cpu1.inst         182433                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::.cpu1.data          35108                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_reads::total              435082                       # Number of read requests responded to by this memory
+system.mem_ctrls.num_writes::.cpu0.data         10650                       # Number of write requests responded to by this memory
+system.mem_ctrls.num_writes::.cpu1.data         10650                       # Number of write requests responded to by this memory
+system.mem_ctrls.num_writes::total              21300                       # Number of write requests responded to by this memory
+system.mem_ctrls.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.membus.pkt_count_system.cpu0.icache_port::system.mem_ctrls.port       364866                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu0.icache_port::total       364866                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu0.dcache_port::system.mem_ctrls.port        91516                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu0.dcache_port::total        91516                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu1.icache_port::system.mem_ctrls.port       364866                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu1.icache_port::total       364866                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu1.dcache_port::system.mem_ctrls.port        91516                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count_system.cpu1.dcache_port::total        91516                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_count::total                 912764                       # Packet count per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu0.icache_port::system.mem_ctrls.port      1459464                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu0.icache_port::total      1459464                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu0.dcache_port::system.mem_ctrls.port       275018                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu0.dcache_port::total       275018                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu1.icache_port::system.mem_ctrls.port      1459464                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu1.icache_port::total      1459464                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu1.dcache_port::system.mem_ctrls.port       275018                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size_system.cpu1.dcache_port::total       275018                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pkt_size::total                 3468964                       # Cumulative packet size per connected master and slave (bytes)
+system.membus.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.membus.snoopTraffic                          0                       # Total snoop traffic (bytes)
+system.membus.snoop_fanout::samples            456347                       # Request fanout histogram
+system.membus.snoop_fanout::mean                    0                       # Request fanout histogram
+system.membus.snoop_fanout::stdev                   0                       # Request fanout histogram
+system.membus.snoop_fanout::underflows              0      0.00%      0.00% # Request fanout histogram
+system.membus.snoop_fanout::0                  456345    100.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::1                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::2                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::3                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::4                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::5                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::6                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::7                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::8                       0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::overflows               0      0.00%    100.00% # Request fanout histogram
+system.membus.snoop_fanout::min_value               0                       # Request fanout histogram
+system.membus.snoop_fanout::max_value               0                       # Request fanout histogram
+system.membus.snoop_fanout::total              456345                       # Request fanout histogram
+system.membus.snoop_filter.hit_multi_requests            0                       # Number of requests hitting in the snoop filter with multiple (>1) holders of the requested data.
+system.membus.snoop_filter.hit_multi_snoops            0                       # Number of snoops hitting in the snoop filter with multiple (>1) holders of the requested data.
+system.membus.snoop_filter.hit_single_requests            0                       # Number of requests hitting in the snoop filter with a single holder of the requested data.
+system.membus.snoop_filter.hit_single_snoops            0                       # Number of snoops hitting in the snoop filter with a single holder of the requested data.
+system.membus.snoop_filter.tot_requests             0                       # Total number of requests made to the snoop filter.
+system.membus.snoop_filter.tot_snoops               0                       # Total number of snoops made to the snoop filter.
+system.membus.snoops                                0                       # Total snoops (count)
+system.membus.trans_dist::ReadReq              435057                       # Transaction distribution
+system.membus.trans_dist::ReadResp             435071                       # Transaction distribution
+system.membus.trans_dist::WriteReq              21300                       # Transaction distribution
+system.membus.trans_dist::WriteResp             21300                       # Transaction distribution
+system.pwrStateResidencyTicks::UNDEFINED 18446744073709551616                       # Cumulative time (in ticks) in various power states
+system.voltage_domain.voltage                       1                       # Voltage in Volts
+
+---------- End Simulation Statistics   ----------

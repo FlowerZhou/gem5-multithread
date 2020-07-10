@@ -128,7 +128,7 @@ setGem5(){
     enableSWCache="No" # [Yes/No]
         numCpuPerGroup=2
 
-    enableDebug="No" # [Yes/No]
+    enableDebug="Yes" # [Yes/No]
         debugOutputDir="$gem5Dir"
         debugFlags="Fetch" #
         # [Flag1,Flag2] use "-h gem5 --debug-help" to see the debug flags 

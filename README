@@ -2,21 +2,21 @@
 
 Multi-Queue
 
-##使用说明##
+##instructions##
 
-编译命令：scons build/X86/gem5.opt -j24
+compile command：scons build/X86/gem5.opt -j24
 
-配置脚本为se文件
+script is se
 
-运行方式：
+Running example：
 
-1. 运行多个普通程序，修改se文件中的numCpus
-命令： ./se -mp 程序1 程序2 ... 程序n
-如： ./se -mp example/simple example/simple
+1. run multiple programs，modify the numCpus in se according to the number of programs
+command： ./se -mp program1 program2 ... program n
+eg： ./se -mp example/simple example/simple
 
-2. 运行多个spec程序，修改se文件中的numCpus
-命令：./se -p spec1 spec2 ... specn
-如 ./se -p 401 401
+2. run multiple spec programs，modify the numCpus in se according to the number of programs
+command：./se -p spec1 spec2 ... specn
+eg:  ./se -p 401 401
 
 
 ###################################################
